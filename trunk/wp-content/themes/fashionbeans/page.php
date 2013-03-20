@@ -14,18 +14,23 @@
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
+<?php while ( have_posts() ) : the_post(); ?>
+<div class="breadcrumb">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php the_title() ?></h1>
+</div>
+<div id="singleOutline" class="left">
+    <div class="mainArticle">
+        <h1 class="articles"><?php the_title(); ?></h1>
+        <div class="articleBody">
+            <?php the_content() ?>
+        </div>
+    </div>
+    <div class="break"></div>
+</div>
+<?php endwhile; // end of the loop. ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+<?php get_sidebar(); ?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
-
-					<?php comments_template( '', true ); ?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
+<div class="break"></div>
+    
 <?php get_footer(); ?>

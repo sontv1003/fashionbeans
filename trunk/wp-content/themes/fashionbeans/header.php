@@ -66,74 +66,153 @@
 	wp_head();
 ?>
 </head>
+    <body <?php body_class(); ?>>
+        <!-- Site bar -->
+        <div id="siteBar">
+            <div class="infoBar">
+                <ul class="sitelinks left">
+                    <li><a class="activeSite" href="/" name="top">FashionBeans</a></li>
+                    <li><a href="/forums/" oldtitle="Discuss everything to do with men's fashion, style &amp; grooming." title="" aria-describedby="ui-tooltip-0">Forums</a></li>
+                    <li><a href="/menswear/" oldtitle="Shop the latest designer menswear from all your favourite retailers." title="" aria-describedby="ui-tooltip-1">Menswear</a></li>
+                    <li><a href="/category/offers-and-vouchers/" oldtitle="The Latest fashion discount codes, money off vouchers &amp; offers." title="">Voucher Codes</a></li>
+                    <li><a rel="nofollow" href="/category/site-announcements/competitions/" oldtitle="Win Great Prizes From Your Favourite Fashion Brands!" title="" aria-describedby="ui-tooltip-3">Competitions</a></li>
+                </ul>
+                <ul class="right socialIcons">
+                    <li style="width:83px;" class="facebookLike">
+                        <iframe scrolling="no" frameborder="0" allowtransparency="true" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FfashionbeansOfficial&amp;send=false&amp;layout=button_count&amp;width=250&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp;appId=117510971682164"></iframe></li>
+                    <li class="twitterFollow"><iframe scrolling="no" frameborder="0" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=fashionbeans&amp;show_screen_name=false&amp;show_count=true" allowtransparency="true"></iframe></li>
+                    <li class="googlePlus">
+                        <div style="height: 20px; width: 90px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline;" id="___plusone_0">
+                            <iframe width="100%" scrolling="no" frameborder="0" hspace="0" marginheight="0" marginwidth="0" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1363778451542" name="I0_1363778451542" src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;hl=en-US&amp;origin=http%3A%2F%2Fwww.fashionbeans.com&amp;url=http%3A%2F%2Fwww.fashionbeans.com%2F&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.vi.FfgfQYnUabs.O%2Fm%3D__features__%2Fam%3DQQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTMakUxJfA2zOhhv3GzzbB_WLnlDNg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Conload&amp;id=I0_1363778451542&amp;parent=http%3A%2F%2Fwww.fashionbeans.com&amp;rpctoken=15684379" allowtransparency="true" data-gapiattached="true" title="+1"></iframe>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- End site bar -->
+        
+        <div style="padding-bottom:0px;z-index:10;" id="wrapper">
+            <div class="center">
+                <a title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="logoLink left" href="<?php echo esc_url( home_url( '/' ) ); ?>"></a>
+                <div class="navBanner right">
+                </div>
+                <div class="clear"></div>
+            </div><!-- end center -->
+            <div class="break"></div>
+            <div class="navigation">
+                <div id="mainNav" class="navigationSimplified">
+                    <ul class="topnavnew">
+                        <li class="mensfashion">
+                            <a class="topnav" rel="nofollow" href="/category/mens-fashion/">Men's Fashion</a>
+                            <div class="multi_menu">
+                                <div class="menuBack">
+                                    <h3>Men's Fashion Categories &amp; Trending Articles</h3>
+                                    <div class="multiLinks left">
+                                        <a rel="nofollow" href="/category/mens-fashion/?seeall=true">All Latest Fashion Articles</a> 
+                                        <a href="/category/mens-fashion-basics/">Men's Fashion Basics</a> 
+                                        <a href="/category/mens-fashion-trends/">Men's Fashion Trends</a> 
+                                        <a href="/category/mens-fashion-guides/">Men's Fashion Guides</a> 
+                                        <a href="/category/collections/">Men's Fashion Collections</a> 
+                                        <a href="/category/mens-style-icons/">Men's Style Icons</a>
+                                    </div>
+                                    <div class="featuredPicks left">
+                                        <ul>
+                                            <li>
+                                                <a href="http://www.fashionbeans.com/2012/mens-a-essential-tweed-blazer/">
+                                                    <img width="230" alt="Men’s Autumn/Winter Essential: Tweed Blazer" src="http://static3.fashionbeans.com/wp-content/uploads/2012/11/tweedblazermain-300x200.jpg">Men’s Autumn/Winter Essential: Tweed Blazer
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.fashionbeans.com/2013/mens-ss13-fashion-trend-neon-fluorescent-colours/">
+                                                    <img width="230" alt="Men’s SS13 Fashion Trend: Neon &amp; Fluorescent Colours" src="http://static4.fashionbeans.com/wp-content/uploads/2013/01/neon-300x200.jpg">Men’s SS13 Fashion Trend: Neon &amp; Fluorescent Colours
+                                                </a>
+                                            </li>
+                                            <li class="nomargin">
+                                                <a href="http://www.fashionbeans.com/2012/5-common-winter-fashion-mistakes/">
+                                                    <img width="230" alt="5 Common Winter Fashion Mistakes" src="http://static1.fashionbeans.com/wp-content/uploads/2012/12/wintermistakes-300x200.jpg">5 Common Winter Fashion Mistakes
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="break"></div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li class="mensstyle">
+                            <a href="/category/mens-style/" class="topnav">Men's Style</a>
+                        </li>
+                        <li class="grooming">
+                            <a href="/category/male-grooming/" class="topnav">Men's Grooming Tips &amp; Male Grooming</a>
+                            <div class="multi_menu grooming_menu" style="visibility: hidden;">
+                                <div class="menuBack">
+                                    <h3>Men's Grooming &amp; Hairstyles</h3>
+                                    <div class="multiLinks left"> 
+                                        <a href="/category/male-grooming/">Men's Grooming Tips</a>
+                                        <a href="/category/mens-hairstyles/">Men's Hairstyles Advice</a>
+                                        <a href="/category/mens-hairstyles-gallery/">Men's Hairstyles Galleries</a>
+                                        <a href="/2011/top-10-men%e2%80%99s-grooming-products/">Top 10 Grooming Products</a>
+                                        <a href="/2011/6-of-the-best-mens-hair-products/">Top 6 Men's Hair Products</a>
+                                    </div>
+                                    <div class="hairGalleries left">
+                                        <ul>
+                                            <li>
+                                                <a title="Men's Short Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-short-hairstyles-gallery/"><img alt="Men's Short Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/short.jpg">Short Hair Gallery</a>
+                                            </li>
+                                            <li>
+                                                <a title="Men's Mid-length Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-medium-length-hairstyles-gallery/">
+                                                    <img alt="Men's Mid-length Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/mid.jpg">Mid-length Hair Gallery
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="Men's Long Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-long-hairstyles-gallery/">
+                                                    <img alt="Men's Long Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/long.jpg">Long Hair Gallery
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="Men's Curly Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-curly-hairstyles-gallery/">
+                                                    <img alt="Men's Curly Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/curly.jpg">Curly Hair Gallery
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a title="Men's Black &amp; Afro Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-black-afro-hairstyles-gallery/">
+                                                    <img alt="Men's Black &amp; Afro Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/black.jpg">Black &amp; Afro Hair Gallery
+                                                </a>
+                                            </li>
+                                            <li class="nomargin">
+                                                <a title="Men's Celebrity Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-celebrity-hairstyles-gallery/">
+                                                    <img alt="Men's Celebrity Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/celeb.jpg">Celebrity Hair Gallery
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="break"></div>                                    
+                                </div>
 
-<body <?php body_class(); ?>>
-<div id="page" class="hfeed">
-	<header id="branding" role="banner">
-			<hgroup>
-				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</hgroup>
-
-			<?php
-				// Check to see if the header image has been removed
-				$header_image = get_header_image();
-				if ( $header_image ) :
-					// Compatibility with versions of WordPress prior to 3.4.
-					if ( function_exists( 'get_custom_header' ) ) {
-						// We need to figure out what the minimum width should be for our featured image.
-						// This result would be the suggested width if the theme were to implement flexible widths.
-						$header_image_width = get_theme_support( 'custom-header', 'width' );
-					} else {
-						$header_image_width = HEADER_IMAGE_WIDTH;
-					}
-					?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<?php
-					// The header image
-					// Check if this is a post or page, if it has a thumbnail, and if it's a big one
-					if ( is_singular() && has_post_thumbnail( $post->ID ) &&
-							( /* $src, $width, $height */ $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( $header_image_width, $header_image_width ) ) ) &&
-							$image[1] >= $header_image_width ) :
-						// Houston, we have a new header image!
-						echo get_the_post_thumbnail( $post->ID, 'post-thumbnail' );
-					else :
-						// Compatibility with versions of WordPress prior to 3.4.
-						if ( function_exists( 'get_custom_header' ) ) {
-							$header_image_width  = get_custom_header()->width;
-							$header_image_height = get_custom_header()->height;
-						} else {
-							$header_image_width  = HEADER_IMAGE_WIDTH;
-							$header_image_height = HEADER_IMAGE_HEIGHT;
-						}
-						?>
-					<img src="<?php header_image(); ?>" width="<?php echo $header_image_width; ?>" height="<?php echo $header_image_height; ?>" alt="" />
-				<?php endif; // end check for featured image or standard header ?>
-			</a>
-			<?php endif; // end check for removed header image ?>
-
-			<?php
-				// Has the text been hidden?
-				if ( 'blank' == get_header_textcolor() ) :
-			?>
-				<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
-				<?php get_search_form(); ?>
-				</div>
-			<?php
-				else :
-			?>
-				<?php get_search_form(); ?>
-			<?php endif; ?>
-
-			<nav id="access" role="navigation">
-				<h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
-				<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-				<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>
-				<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
-				<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assigned to the primary location is the one used. If one isn't assigned, the menu with the lowest ID is used. */ ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav><!-- #access -->
-	</header><!-- #branding -->
-
-
-	<div id="main">
+                                        </div>
+                                    </li>
+                                    <li class="fitness">
+                                        <a href="/category/mens-fitness-muscle-building/" class="topnav">Men's Fitness</a>
+                                    </li>
+                                    <li class="streetstylenav">
+                                        <a href="/category/mens-street-style/" class="topnav">Street Style Fashion Photography</a>
+                                    </li>
+                                    <li class="navlookbooks">
+                                        <a href="/category/mens-look-books/" class="topnav">Men's Fashion Look Books</a>
+                                    </li>
+                                    <li class="fbtvnav">
+                                        <a href="/category/fbtv/" class="topnav">FBTV</a>
+                                    </li>
+                                    <li class="fashionnews">
+                                        <a href="/category/mens-fashion-news/" class="topnav">Men's Fashion &amp; Style News</a>
+                                    </li>
+                                </ul>
+                                <div class="search-box right">
+                                    <form action="<?php bloginfo('home'); ?>" method="get" id="searchform"> 
+                                        <input type="text" size="10" value="Nhập nội dung" name="s" class="textfield" id="navsearch" value="Nhập nội dung" onfocus="if (this.value == 'Nhập nội dung') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nhập nội dung';}"> 
+                                        <input type="image" border="0" alt="Tìm kiếm" src="<?php bloginfo( 'template_url' ); ?>/images/new/nav/search2.gif" name="searchsubmit" id="navsearchbutton">
+                                    </form>
+                                </div>
+                    <div class="break"></div>
+                </div> <!-- end mainNav -->
+            </div> <!-- end navigation-->
