@@ -3882,7 +3882,7 @@ li.nomarginAds {
 	letter-spacing:1px;
 	border-top:2px solid #FFF;
 	border-bottom:2px solid #FFF;
-	width:200px;
+	width:190px;
 	padding:8px 0;
 	height:18px;
 }
@@ -4009,4 +4009,13 @@ li.nomarginAds {
 
 .disappear {
 	display:none;
+}
+.linksBlock ul {
+    
+}
+.linksBlock ul li {
+    list-style-type: none;
+}
+.linksBlock:last-child {
+    width: 155px;
 }
