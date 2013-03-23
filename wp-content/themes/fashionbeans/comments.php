@@ -76,3 +76,57 @@
 	<?php comment_form(); ?>
 
 </div><!-- #comments -->
+
+<!--
+<a name="comments"></a>
+<div class="articleComments">
+    <div id="respond">
+        <div class="blacktop">
+            <h2>
+                Leave A Comment
+                <a rel="nofollow" id="cancel-comment-reply-link" href="/2013/engineered-garments-clothing-ss13-collection/#respond" style="display:none;">
+                    - Click Here To Cancel Reply
+                </a>
+            </h2>
+            <a name="commentForm"></a>
+        </div>
+        <div class="commentingForm">
+            <form action="<?php echo site_url() ?>/wp-comments-post.php" method="post" id="commentform" novalidate="novalidate">
+                <label class="commentLabel">Name <span class="red bold">*</span>
+                </label>
+                <div class="input"> 
+                    <input type="text" name="author" class="commentFieldsNew required" id="author" value="" size="22" tabindex="5" aria-required="true">
+                </div>
+                <div class="break"></div>
+                <label class="commentLabel">E-mail <span class="red bold">*</span></label>
+                <div class="input"> 
+                    <input type="text" name="email" class="commentFieldsNew required email" id="email" value="" size="22" tabindex="6" aria-required="true"> 
+                    <span class="help-block">
+                        Your email will <strong>NOT</strong> 
+                        be published or used for marketing purposes
+                    </span></div>
+                <div class="break"></div>
+                <label class="commentLabel">
+                    Your Comment 
+                    <span class="red bold">*</span>:
+                </label><div class="input">
+                    <textarea name="comment" id="comment" class="commentAreaNew required" cols="100%" rows="10" tabindex="8"></textarea>
+                </div>
+                <div class="break"></div>
+                <p style="clear: both;" class="subscribe-to-comments"> 
+                    <input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;">
+                    <label for="subscribe">Notify me of follow-up comments via e-mail</label>
+                </p> 
+                <input name="submit" type="submit" id="submit" class="buttons commentSubmit right" tabindex="9" value="Submit"> 
+                <input type="hidden" name="comment_post_ID" value="171398" id="comment_post_ID">
+                <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                <p style="display: none;">
+                    <input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ca67564a5f">
+                </p>
+            </form>
+            <div class="break"></div>
+        </div>
+    </div>
+</div>
+
+-->

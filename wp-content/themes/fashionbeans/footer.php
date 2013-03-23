@@ -9,7 +9,7 @@
             <div class="companyInfo">
                 <?php get_sidebar( 'footer' ); ?>
                 <div class="footerIcons right">
-                    <span>Kết nối cùng FashionBeans</span>
+                    <span>Kết nối cùng WELOOK</span>
                     <ul>
                         <li style="margin-left:0;">
                             <a title="FashionBeans Official Facebook Page" target="_blank" href="http://www.facebook.com/fashionbeansOfficial" class="fbFooter">FashionBeans Official Facebook Page</a>
@@ -28,11 +28,11 @@
                         </li>
                     </ul>
                     <div class="break"></div> 
-                    <span>FashionBeans Newsletter</span>
-                    <p>Sign up to our newsletter to get the latest articles, lookbooks, street style &amp; fashion voucher codes direct to your inbox:</p>
+                    <span>Nhận tin từ Welook</span>
+                    <p>Đăng ký để nhận các tin tức cập nhật mới nhất từ Welook</p>
                     <form id="footerNewsletter" method="get" action="/newsletter/">
-                        <input type="text" onblur="if(this.value==''){this.value='Enter Email Address'}" onclick="if(this.value=='Enter Email Address'){this.value=''}" size="10" value="Enter Email Address" name="email" class="left" id="footerEmail"> 
-                        <input type="submit" value="Sign Up" class="left" id="footerSignup">
+                        <input type="text" onblur="if(this.value==''){this.value='Nhập vào Email'}" onclick="if(this.value=='Nhập vào Email'){this.value=''}" size="10" value="Nhập vào Email" name="email" class="left" id="footerEmail"> 
+                        <input type="submit" value="Đăng ký" class="left" id="footerSignup">
                     </form>
                     <div class="break"></div>                            
                 </div>
@@ -44,8 +44,8 @@
                         </span>
                 </div>
                 <div class="break"></div>
-                <script src="http://static.fashionbeans.com/wp-content/themes/newsite/js/features.min.js.gzip" language="javascript" type="text/javascript"></script>
-                <script src="http://static.fashionbeans.com/wp-content/themes/newsite/js/logic1.js.gzip" language="javascript" type="text/javascript"></script>
+                <script src="<?php bloginfo('template_url'); ?>/js/features.min.js" language="javascript" type="text/javascript"></script>
+                <script src="<?php bloginfo('template_url'); ?>/js/logic1.js" language="javascript" type="text/javascript"></script>
                 <script type="text/javascript">
                     $(document).ready(function(){
                         dropdownMenus();
@@ -58,20 +58,17 @@
                         touchwipe("#fbtv-homepage");
                     });
                 </script>
-                <script type="text/javascript">
-                    (function(){
-                        var po=document.createElement("script");
-                        po.type="text/javascript";po.async=true;
-                        po.src="https://apis.google.com/js/plusone.js";
-                        var s=document.getElementsByTagName("script")[0];
-                        s.parentNode.insertBefore(po,s);})();
-                </script>
-                <script type="text/javascript" src="http://stats.wordpress.com/e-201312.js"></script>
-                <script type="text/javascript">
-                    st_go({v:'ext',j:'1:2.2',blog:'5414061',post:'0',tz:'0'});var load_cmc=function(){linktracker_init(5414061,0,2);};if(typeof addLoadEvent!='undefined')addLoadEvent(load_cmc);else load_cmc();</script>
                 <img alt="" src="http://stats.wordpress.com/g.gif?host=www.fashionbeans.com&amp;rand=0.5231645695584823&amp;v=ext&amp;j=1%3A2.2&amp;blog=5414061&amp;post=0&amp;tz=0&amp;ref=http%3A//www.fashionbeans.com/category/mens-fashion/" id="wpstats">                                
             </div>
         </div> <!-- end Footer -->
 <?php wp_footer(); ?>
+        
+    <script>
+        <?php 
+
+        ?>
+        var active_item = 'menu-item-<?php echo 3; ?>';
+        jQuery('#'+active_item).addClass('current');
+    </script>
     </body>
 </html>
