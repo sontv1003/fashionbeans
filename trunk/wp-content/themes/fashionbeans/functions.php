@@ -592,3 +592,119 @@ function twentyeleven_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
 
+
+function menu_bar() {
+    $menu_list = '';
+    $menu_name = 'primary';
+    if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+        $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+        $menu_items = wp_get_nav_menu_items($menu->term_id);
+        $subArr = array();
+        foreach ( (array) $menu_items as $menu_item ) {
+            if($menu_item->menu_item_parent!=0) {
+                if(!isset($subArr[$menu_item->menu_item_parent]))
+                    $subArr[$menu_item->menu_item_parent] = 0;
+
+                $subArr[$menu_item->menu_item_parent]++;   
+            }
+        }
+
+        $menu_list = '<ul id="menu-' . $menu_name . '" class="topnavnew">';
+        $count = 0;
+        foreach ( (array) $menu_items as $menu_item ) {
+            $title = $menu_item->title;                
+            $url = $menu_item->url;
+            $active_class = '';
+            if($menu_item->menu_item_parent!=0) {
+                if($count==0) {
+                    $menu_list .= '<div class="multi_menu"><div class="arrow_menu"></div><div class="menuBack">';
+                    $menu_list .= '<h3>Mens Fashion Categories &amp; Trending Articles</h3>';
+                    $menu_list .= '<div class="multiLinks left">';
+                }
+
+                $menu_list .= '<a href="'. $url .'">'. $title .'</a>';
+
+                $count++;
+
+                if($count == $subArr[$menu_item->menu_item_parent]) {
+                     $menu_list .= '<div class="featuredPicks left"></div></div><div class="break"></div></div></div></li>';
+                     $count = 0;
+                }
+
+            } else {
+                $menu_list .= '<li id="menu-item-'.$menu_item->object_id.'"><a href="' . $url . '" class="topnav">' . $title . '</a>';
+                if(empty($subArr[$menu_item->ID])) {
+                    $menu_list .= '</li>';
+                    $count = 0;
+                }
+            }
+        }
+
+        $menu_list .= '</ul>';
+    }
+
+    echo $menu_list;
+}
+
+// Get number comment in post
+function get_number_comments($id=null) {
+    if(empty($id))
+        $id = get_the_ID();
+    
+    $comments_count = wp_count_comments($id);
+    return $comments_count->total_comments;
+}
+
+//Max Length of Content
+function content_max_charlength($content,$charlength) {
+   $charlength++;
+   if(strlen($content)>$charlength) {
+       $subex = substr($content,0,$charlength-5);
+       $exwords = explode(" ",$subex);
+       $excut = -(strlen($exwords[count($exwords)-1]));
+       if($excut<0) {
+            echo substr($subex,0,$excut);
+       } else {
+       	    echo $subex;
+       }
+   } else {
+	   echo $content;
+   }
+}
+
+function the_excerpt_max_charlength($charlength) {
+   $excerpt = get_the_excerpt();
+   $charlength++;
+   if(strlen($excerpt)>$charlength) {
+       $subex = substr($excerpt,0,$charlength-5);
+       $exwords = explode(" ",$subex);
+       $excut = -(strlen($exwords[count($exwords)-1]));
+       if($excut < 0) {
+            echo substr($subex,0,$excut);
+       } else {
+       	    echo $subex;
+       }
+       echo "...";
+   } else {
+        echo $excerpt;
+   }
+}
+
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'default_thumb', 300, 200, true);
+    add_image_size( 'normal_thumb', 254, 400, true);
+    add_image_size( 'large_thumb', 500, 333, true);
+}
+
+// Get current Category ID
+function getCurrentCatID(){
+
+    global $wp_query;
+    $cat_ID = '';
+    if(is_category() || is_single()){
+        $cat_ID = get_query_var('cat');
+    }
+
+    return $cat_ID;
+
+}

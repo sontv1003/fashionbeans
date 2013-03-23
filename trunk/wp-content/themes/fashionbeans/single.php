@@ -9,24 +9,41 @@
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
+<?php while ( have_posts() ) : the_post(); ?>
+<div class="breadcrumb">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php the_title() ?></h1>
+</div>
+<div class="articleInfo">
+    <div class="commentCount right"> 
+        <a href="#comments"><span><?php echo get_number_comments() ?></span>Comments</a>
+    </div>
+    <h1 class="articles"><?php the_title(); ?></h1>
+    <div class="meta">
+        <span class="author">Người đăng: 
+            <a href="<?php the_author_link() ?>" title="<?php the_author_nickname()?>" rel="author"><?php the_author_nickname()?></a> 
+            on 21st March 2013 </span>
+        <div class="break"></div>
+    </div>
+</div>
+<div id="singleOutline" class="left">
+    <div class="articleImage"></div>
+    
+    <div class="articleSocial"></div>
+    
+    <div class="articleBody"><?php the_content() ?></div>
+    
+    <div class="articleSocial"></div>
+    
+    <div class="relatedPosts"></div>
+    
+    <div class="break"></div>
+    
+    <?php comments_template(); ?>
+</div>
+<?php endwhile; // end of the loop. ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+<?php get_sidebar(); ?>
 
-					<nav id="nav-single">
-						<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
-						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>
-						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
-					</nav><!-- #nav-single -->
-
-					<?php get_template_part( 'content-single', get_post_format() ); ?>
-
-					<?php comments_template( '', true ); ?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
+<div class="break"></div>
+    
 <?php get_footer(); ?>

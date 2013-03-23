@@ -209,6 +209,7 @@ strong, b, .bold {
 	margin:0 auto;
 	padding:15px 15px 35px;
 	width:1000px;
+        min-height: 600px;
 	padding:15px;
 	background:#FFF;
 }
@@ -428,10 +429,18 @@ span.blackHeaderBox {
 }
 
 .navigationSimplified {
-	background:url(images/new/nav/navbackground.gif) top left no-repeat;
-	z-index:100;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+/*    outline-color: #000;
+    outline-style: solid;
+    outline-width: 1px;*/
+    background: #000;
+    color: #fff;
+    z-index:100;
 }
-
+.topnavnew {
+}
 .topnavnew li {
 	list-style:none;
 	position:relative;
@@ -442,8 +451,12 @@ span.blackHeaderBox {
 	float:left;
 	display:block;
 	height:47px;
-	text-indent:-1000em;
-	overflow:hidden;
+        line-height: 47px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 17px;
+        /*font-family: Tahoma;*/
+        color: #fff;
 }
 
 li.mensfashion .topnav {
@@ -492,27 +505,36 @@ li.fashionnews .topnav {
 }
 
 .topnavnew li:hover .topnav {
-	background-position:0 -47px;
+    text-decoration: underline;
 }
 
 .topnavnew li.current a {
-	background-position:0 -93px;
+    background: #EEEEEE;
+    color: #000;
+    text-decoration: underline;
 }
 
 .topnavnew li.current:hover a {
-	background-position:0 -93px;
+    color: #000;
+    text-decoration: underline;
 }
-
-.multi_menu {
-	background:url(images/new/nav/navarrow.png) 0 0 no-repeat;
-	visibility:hidden;
-	position:absolute;
-	top:47px;
-	left:0;
-	width:1000px;
-	z-index:100;
-	padding:8px 0 0;
-	border-bottom:1px solid #333;
+.arrow_menu {
+    background:url(images/new/nav/navarrow.png) 0 0 no-repeat;
+    width: 50px;
+    height: 8px;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+}
+.multi_menu {	
+    visibility:hidden;
+    position:absolute;
+    top:50px;
+    left:0px;
+    width:1000px;
+    z-index:100;
+    padding:8px 0 0;
+    border-bottom:1px solid #333;
 }
 
 .grooming_menu {
@@ -3882,7 +3904,7 @@ li.nomarginAds {
 	letter-spacing:1px;
 	border-top:2px solid #FFF;
 	border-bottom:2px solid #FFF;
-	width:190px;
+	width:175px;
 	padding:8px 0;
 	height:18px;
 }
@@ -4018,4 +4040,9 @@ li.nomarginAds {
 }
 .linksBlock:last-child {
     width: 155px;
+}
+.nav_outline {
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: #000;
 }

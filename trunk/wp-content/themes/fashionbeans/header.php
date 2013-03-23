@@ -48,6 +48,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquerylatest.min.js"></script>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -99,7 +100,12 @@
             </div><!-- end center -->
             <div class="break"></div>
             <div class="navigation">
+                <div class="nav_outline" >
                 <div id="mainNav" class="navigationSimplified">
+                    <?php
+                        menu_bar();
+                    ?>
+                    <!--
                     <ul class="topnavnew">
                         <li class="mensfashion">
                             <a class="topnav" rel="nofollow" href="/category/mens-fashion/">Men's Fashion</a>
@@ -207,6 +213,7 @@
                                         <a href="/category/mens-fashion-news/" class="topnav">Men's Fashion &amp; Style News</a>
                                     </li>
                                 </ul>
+                    -->
                                 <div class="search-box right">
                                     <form action="<?php bloginfo('home'); ?>" method="get" id="searchform"> 
                                         <input type="text" size="10" value="Nhập nội dung" name="s" class="textfield" id="navsearch" value="Nhập nội dung" onfocus="if (this.value == 'Nhập nội dung') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nhập nội dung';}"> 
@@ -215,4 +222,5 @@
                                 </div>
                     <div class="break"></div>
                 </div> <!-- end mainNav -->
+                </div>
             </div> <!-- end navigation-->
