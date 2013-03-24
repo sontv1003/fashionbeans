@@ -56,6 +56,7 @@
                         touchwipe(".featuredScroller");
                         touchwipe("#mostPopular");
                         touchwipe("#fbtv-homepage");
+                        //validateForms("#commentform");
                     });
                 </script>
                 <img alt="" src="http://stats.wordpress.com/g.gif?host=www.fashionbeans.com&amp;rand=0.5231645695584823&amp;v=ext&amp;j=1%3A2.2&amp;blog=5414061&amp;post=0&amp;tz=0&amp;ref=http%3A//www.fashionbeans.com/category/mens-fashion/" id="wpstats">                                
@@ -65,9 +66,9 @@
         
     <script>
         <?php 
-
+            $cat_id = get_category_top_parent_id();
         ?>
-        var active_item = 'menu-item-<?php echo 3; ?>';
+        var active_item = 'menu-item-<?php echo $cat_id; ?>';
         jQuery('#'+active_item).addClass('current');
     </script>
     </body>

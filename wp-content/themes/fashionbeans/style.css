@@ -1,7 +1,7 @@
 body {
 	margin:0;
 	padding:0;
-	font-family:Georgia,  Arial,  Helvetica,  Tahoma,  Lucida Sans,  verdana,  sans-serif;
+	font-family:Tahoma, Georgia,  Arial,  Helvetica,  Tahoma,  Lucida Sans,  verdana,  sans-serif;
 	color:#000;
 	background-color:#FFF;
 	font-size:12px;
@@ -313,7 +313,7 @@ span.blackHeaderBox {
 }
 
 #singleOutline .blacktop h2 {
-	font-size:20px;
+	font-size:15px;
 	font-family:NewsGothicBTW01-ExtraCn,  Helvetica,  Arial,  Tahoma,  Verdana,  sans-serif;
 	padding:6px 6px 8px;
 	line-height:20px;
@@ -440,10 +440,10 @@ span.blackHeaderBox {
     z-index:100;
 }
 .topnavnew {
+    position:relative;
 }
 .topnavnew li {
 	list-style:none;
-	position:relative;
 	float:left;
 }
 
@@ -452,9 +452,10 @@ span.blackHeaderBox {
 	display:block;
 	height:47px;
         line-height: 47px;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 17px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 13px;
+        text-transform: uppercase;
         /*font-family: Tahoma;*/
         color: #fff;
 }
@@ -3262,7 +3263,7 @@ a.highlight:hover {
 
 #commentform label.commentLabel {
 	padding-top:4px;
-	font-size:16px;
+	font-size:13px;
 	line-height:20px;
 	float:left;
 	width:120px;
@@ -3424,7 +3425,7 @@ a.highlight:hover {
 	width:480px;
 	display:block;
 	clear:both;
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
 }
 
 #respond input.error, #respond textarea.error {
@@ -4045,4 +4046,130 @@ li.nomarginAds {
     border-width: 1px 0px 1px 0px;
     border-style: solid;
     border-color: #000;
+}
+
+.sponsorsRHS {
+	list-style:none;
+	padding:0 0 10px;
+}
+
+.sponsorsRHS li {
+	display:inline-block;
+	margin:0 10px 10px 0;
+	float:left;
+}
+
+.sponsorsRHS li img {
+	width:125px;
+	height:125px;
+	border:1px solid #DDD;
+	padding:9px;
+}
+
+.sponsorsRHS li img:hover {
+	border:1px solid #CCC;
+}
+
+li.nomarginAds {
+	margin:0 0 10px;
+}
+
+.wp125clearfix {
+    
+}
+.wp125clearfix .odd {
+    float: left;
+     margin: 0 10px 10px 0;
+}
+.wp125clearfix .even {
+    float: left;
+}
+.wp125clearfix img {
+	width:125px;
+	height:125px;
+	border:1px solid #DDD;
+	padding:9px;
+}
+.wp125clearfix img:hover {
+	border:1px solid #CCC;
+}
+.wp125clearfix .wp125ad {
+
+}
+.wp125clearfix {
+  *zoom: 1;
+}
+.wp125clearfix:before,
+.wp125clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.wp125clearfix:after {
+  clear: both;
+}
+.wpcf7 input[type="text"] {
+    width: 350px;
+    height: 24px;
+}
+.wpcf7 input,.wpcf7 textarea {
+    font-family: 'PT Serif W01 Book', Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    padding: 3px 4px;
+    font-size: 14px;
+    line-height: 24px;
+    color: gray;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.wpcf7 textarea {
+    height: 150px;
+    width: 500px;
+}
+
+.wpcf7 .wpcf7-submit:hover {
+    color: #FFF;
+    background-color: #135bc0;
+    background-repeat: repeat-x;
+    background-image: 0 to(#135bc0);
+    background-image: 0 color-stop(100%,#135bc0);
+    background-image: linear-gradient(top,#1568df,#135bc0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1568df',endColorstr='#135bc0',GradientType=0);
+    border-color: #135bc0 #135bc0 #0c3a7a;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+
+.wpcf7 .wpcf7-submit {
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-bottom-color: #bbb;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+    -webkit-transition: .1s linear all;
+    -moz-transition: .1s linear all;
+    -ms-transition: .1s linear all;
+    -o-transition: .1s linear all;
+    transition: .1s linear all;
+    background-color: #0C0;
+    background-repeat: repeat-x;
+    background-image: 0 to(#33CC00);
+    background-image: 0 color-stop(100%,#33CC00);
+    background-image: linear-gradient(top,#006600,#33CC00);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006600',endColorstr='#33CC00',GradientType=0);
+    border-color: #3C0 #3C0 #060;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
 }
