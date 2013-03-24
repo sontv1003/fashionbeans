@@ -13,8 +13,9 @@ function dropdownMenus(){
         $(this).addClass("hover");
         $('div.multi_menu',this).css('visibility', 'visible');
         var p = jQuery(this).position();
-        $('.multi_menu',this).css('left',-p.left+15+'px');
-        $('.arrow_menu',this).css('left',p.left-15+'px');
+        var width = jQuery(this).css('width');
+        //console.log(width);
+        $('.arrow_menu',this).css('left',parseInt(p.left,10) + parseInt(width,10)/2 - 40 +'px');
     }
  
     function doClose() {
@@ -22,7 +23,7 @@ function dropdownMenus(){
         $('div.multi_menu',this).css('visibility', 'hidden');
     }
 
-    $("ul.topnavnew li").hoverIntent(config);
+    jQuery("ul.topnavnew li").hoverIntent(config);
     
 };
 

@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post();?>
 <div class="breadcrumb">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php the_title() ?></h1>
 </div>
@@ -26,7 +26,9 @@ get_header(); ?>
     </div>
 </div>
 <div id="singleOutline" class="left">
-    <div class="articleImage"></div>
+    <div class="articleImage">
+        <?php the_post_thumbnail() ?>
+    </div>
     
     <div class="articleSocial"></div>
     
@@ -47,3 +49,6 @@ get_header(); ?>
 <div class="break"></div>
     
 <?php get_footer(); ?>
+<script>
+validateForms("#commentform");
+</script>

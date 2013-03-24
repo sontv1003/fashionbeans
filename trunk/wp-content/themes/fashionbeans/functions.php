@@ -708,3 +708,58 @@ function getCurrentCatID(){
     return $cat_ID;
 
 }
+?>
+                
+<?php //this function will be called in the next section
+function advanced_comment($comment, $args, $depth) {
+   $GLOBALS['comment'] = $comment; ?>
+ 
+<li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+   <div class="commentsBody comment-author vcard">
+     <?php echo get_avatar($comment,$size='0',$default='<path_to_url>' ); ?>
+       <div class="comment-meta">
+           <a href="<?php the_author_meta( 'user_url'); ?>"><?php printf(__('%s'), get_comment_author_link()) ?></a>
+            <span class="commentDate">
+                 <?php printf(__('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?><?php edit_comment_link(__('(Sửa)'),'  ','') ?>
+            </span>
+        </div>
+     <div class="clear"></div>
+ 
+     <?php if ($comment->comment_approved == '0') : ?>
+       <em><?php _e('Nhận xét của bạn đang chờ xét duyệt') ?></em>
+       <br />
+     <?php endif; ?>
+    
+    <?php comment_text() ?>
+    <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'],'reply_text' => 'TRẢ LỜI'))) ?>
+    <div class="break"></div>
+   </div>
+<?php } ?>
+
+    
+<?php
+    /**
+* Returns ID of top-level parent category, or current category if you are viewing a top-level
+*
+* @return   string      $catParent  ID of top-level parent category
+*/
+function get_category_top_parent_id() {
+    $catid = null;
+    if(is_single()) {
+        global $post;
+        $cat_post = get_the_category($post->ID);
+        $catid = $cat_post[0]->cat_ID;
+    }elseif(is_category()) {
+        $current_cat = get_the_category();
+        $catid = $current_cat[0]->cat_ID;
+    }
+    
+    while ($catid) {
+     $cat = get_category($catid); // get the object for the catid
+     $catid = $cat->category_parent; // assign parent ID (if exists) to $catid
+     // the while loop will continue whilst there is a $catid
+     // when there is no longer a parent $catid will be NULL so we can assign our $catParent
+     $catParent = $cat->cat_ID;
+    }
+   return $catParent;
+}
