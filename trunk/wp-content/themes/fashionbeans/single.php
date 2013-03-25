@@ -30,11 +30,19 @@ get_header(); ?>
         <?php the_post_thumbnail() ?>
     </div>
     
-    <div class="articleSocial"></div>
+    <div class="articleSocial" style="border-top:none;border-bottom:double #111;margin:0 0 25px 0;padding-top:0;">
+       <span class="left">CHIA SẺ:</span>
+       <div class="left"><?php echo get_jamie_social_code(); ?></div>
+       <div class="break"></div>
+    </div>
     
     <div class="articleBody"><?php the_content() ?></div>
     
-    <div class="articleSocial"></div>
+    <div class="articleSocial">
+        <span class="left">CHIA SẺ:</span>
+        <div class="left"><?php echo get_jamie_social_code(); ?></div>
+        <div class="break"></div>
+    </div>
     
     <div class="relatedPosts"></div>
     
