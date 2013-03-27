@@ -112,7 +112,7 @@ strong, b, .bold {
 	-ms-transition:.1s linear all;
 	-o-transition:.1s linear all;
 	transition:.1s linear all;
-	background-color:#0C0;
+	background-color:#000;
 	background-repeat:repeat-x;
 	background-image:0 to(#33CC00));
 	background-image:0;
