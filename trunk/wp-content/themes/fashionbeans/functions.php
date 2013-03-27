@@ -342,7 +342,7 @@ if ( ! function_exists( 'twentyeleven_continue_reading_link' ) ) :
  * Returns a "Continue Reading" link for excerpts
  */
 function twentyeleven_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) . '</a>';
+	return '';// <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) . '</a>';
 }
 endif; // twentyeleven_continue_reading_link
 
@@ -395,8 +395,8 @@ function twentyeleven_widgets_init() {
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<div class="headerBox"><span class="sideHeader">',
+		'after_title' => '</span></div>',
 	) );
 
 	register_sidebar( array(
@@ -670,6 +670,7 @@ function content_max_charlength($content,$charlength) {
    } else {
 	   echo $content;
    }
+   echo '...';
 }
 
 function the_excerpt_max_charlength($charlength) {
@@ -694,6 +695,7 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'default_thumb', 300, 200, true);
     add_image_size( 'normal_thumb', 254, 400, true);
     add_image_size( 'large_thumb', 500, 333, true);
+    add_image_size( 'slide_show', 675, 340, true);
 }
 
 // Get current Category ID
@@ -763,3 +765,52 @@ function get_category_top_parent_id() {
     }
    return $catParent;
 }
+
+
+function get_slide_show() {
+        $numberposts = 5;
+        $cats = get_the_category();
+        $category_ids = $cats[0]->cat_ID;
+        $args = array(
+            'numberposts'     => $numberposts,
+            'offset'          => 0,
+            'category'        => $category_ids,
+            'orderby'         => 'post_date',
+            'order'           => 'DESC',
+            'include'         => '',
+            'exclude'         => '',
+            'post_type'       => 'post',
+            'post_status'     => 'publish' 
+        );
+        
+        $recent_posts = get_posts( $args );
+        $count = count($recent_posts);        
+?>
+    <div class="featuredScroller jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
+        <div class="scrollerControls">
+            <?php foreach(range(1,$count) as $index): ?>
+                <a href="#" class="inactive"><?php echo $index; ?></a>            
+            <?php endforeach; ?>
+        </div>
+        <div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;">
+            <ul class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: -1350px; width: 3375px;">
+                <?php foreach($recent_posts as $post): setup_postdata($post); ?>
+                <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" style="float: left; list-style: none; width: 675px;" jcarouselindex="1"> 
+                    <a href="<?php the_permalink() ?>">
+                         <?php echo get_the_post_thumbnail($post->ID,'slide_show'); ?> 
+                        <div class="featuredInfo" style="display: none;"> 
+                            <span>
+                                <?php $category = get_the_category( $post->ID );
+                                    echo $category[0]->cat_name;?>
+                            </span>
+                            <h2><?php the_title(); ?></h2>
+                        </div> 
+                    </a>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="jcarousel-prev jcarousel-prev-horizontal" style="top: 135px; display: none;"></div>
+        <div class="jcarousel-next jcarousel-next-horizontal" style="top: 135px; display: none;"></div>        
+    </div>
+<?php } ?>

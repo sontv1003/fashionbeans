@@ -220,7 +220,7 @@ strong, b, .bold {
 }
 
 h1.articles {
-	font-size:40px;
+	font-size:35px;
 	font-family:NewsGothicBTW01-BoldExt,  Helvetica,  Arial,  Tahoma,  Verdana,  sans-serif;
 	margin:0;
 	padding:0 0 5px;
@@ -1522,7 +1522,7 @@ ul.rhsNews li img {
 
 .catArticles h2 {
 	font-family:NewsGothicBTW01-BoldExt,  Helvetica,  Arial,  Tahoma,  Verdana,  sans-serif;
-	font-size:24px;
+	font-size:18px;
 	line-height:24px;
 	text-transform:capitalize;
 	margin:0 0 5px;
@@ -1535,7 +1535,8 @@ ul.rhsNews li img {
 }
 
 .artAuthor {
-	font-size:14px;
+	font-size:11px;
+        font-weight: bold;
 	text-transform:uppercase;
 	color:#333;
 	letter-spacing:1px;
@@ -2459,8 +2460,8 @@ cboxClose:hover {
 .meta {
 	padding:0 0 3px;
 	color:#666;
-	text-align:left;
-	font-family:'PT Serif W01 Book',  Georgia,  "Times New Roman",  Times,  serif;
+	text-align:left;	
+	font-family:Helvetica, Tahoma, Times, serif;
 	font-size:16px;
 }
 
@@ -3180,7 +3181,7 @@ a.highlight:hover {
 }
 
 .commentsBody {
-	padding:10px 0 10px 15px;
+	padding-left:15px;
 	border-left:3px solid #EEE;
 }
 

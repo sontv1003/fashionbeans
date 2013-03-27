@@ -5,20 +5,39 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 */
 
 .wp-pagenavi {
-	clear: both;
+    clear: both;
 }
 
 .wp-pagenavi a, .wp-pagenavi span {
-	text-decoration: none;
-	border: 1px solid #BFBFBF;
-	padding: 3px 5px;
-	margin: 2px;
+    text-decoration: none;
+    border: 1px solid #BFBFBF;
+    padding: 5px 10px;
+    margin: 2px;
+    float:left;
 }
 
-.wp-pagenavi a:hover, .wp-pagenavi span.current {
-	border-color: #000;
+.wp-pagenavi a:hover,.wp-pagenavi a.page:hover {
+    background: #000;
+    color: #fff;
 }
-
+.wp-pagenavi a.nextpostslink {
+    /*float: right;*/
+}
+.wp-pagenavi a.previouspostslink {
+    /*float: left;*/
+}
 .wp-pagenavi span.current {
-	font-weight: bold;
+    font-weight: bold;
+    background: none repeat scroll 0 0 #AD914A;
+    color: #FFFFFF;
+    padding: 5px 8px;
+}
+.wp-pagenavi a.page {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    display: block;
+    font-size: 16px;
+    padding: 3px 8px;
+
 }
