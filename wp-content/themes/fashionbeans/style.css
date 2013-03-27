@@ -3,7 +3,7 @@ body {
 	padding:0;
 	font-family:Tahoma, Georgia,  Arial,  Helvetica,  Tahoma,  Lucida Sans,  verdana,  sans-serif;
 	color:#000;
-	background:url(images/bg-body.png) top left repeat-x;
+	background:url(images/bg-body.png) top left;
 	font-size:12px;
 }
 
