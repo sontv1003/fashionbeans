@@ -2492,8 +2492,8 @@ cboxClose:hover {
 }
 
 .commentCount span {
-	font-size:32px;
-	line-height:40px;
+	font-size:21px;
+	line-height:32px;
 	display:block;
 	color:#FFF;
 	text-align:center;
