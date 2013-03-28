@@ -18,7 +18,9 @@ get_header();
 </div>
 
 <div id="catmainBody" class="left">
-    <?php get_slide_show() ?>
+    <div class="featuredScroller jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
+        <?php get_slide_show() ?>        
+    </div>
     
     <div class="blacktop"> 
         <span class="blackheader">Mới nhất: 
