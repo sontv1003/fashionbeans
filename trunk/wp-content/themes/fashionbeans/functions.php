@@ -786,7 +786,6 @@ function get_slide_show() {
         $recent_posts = get_posts( $args );
         $count = count($recent_posts);        
 ?>
-    <div class="featuredScroller jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
         <div class="scrollerControls">
             <?php foreach(range(1,$count) as $index): ?>
                 <a href="#" class="inactive"><?php echo $index; ?></a>            
@@ -811,6 +810,5 @@ function get_slide_show() {
             </ul>
         </div>
         <div class="jcarousel-prev jcarousel-prev-horizontal" style="top: 135px; display: none;"></div>
-        <div class="jcarousel-next jcarousel-next-horizontal" style="top: 135px; display: none;"></div>        
-    </div>
+        <div class="jcarousel-next jcarousel-next-horizontal" style="top: 135px; display: none;"></div>
 <?php } ?>
