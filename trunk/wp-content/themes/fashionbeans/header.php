@@ -28,7 +28,7 @@
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 */
-	global $page, $paged;
+	global $page, $paged,$cat_id;
 
 	wp_title( '|', true, 'right' );
 

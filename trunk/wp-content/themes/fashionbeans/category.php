@@ -10,21 +10,21 @@
 get_header();
 ?>
 <div class="breadcrumb">
-    <?php 
-    $category = get_the_category();
-    ?>
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php echo $category[0]->cat_name; ?></h1>
+
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php echo single_cat_title(); ?></h1>
 </div>
 
 <div id="catmainBody" class="left">
     <?php get_slide_show() ?>
     <div class="blacktop"> 
         <span class="blackheader">Mới nhất: 
-            <?php $category = get_the_category(); 
-                echo $category[0]->cat_name; ?>
+            <?php echo single_cat_title(); ?>
         </span>
     </div>
-    <?php if ( have_posts() ) : ?>
+<?php 
+    query_posts(array('posts_per_page'  => 20,'paged' => $paged));    
+    if ( have_posts() ) :  
+?>
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="catArticles"> 
         <a href="<?php the_permalink() ?>" class="left relative">
@@ -50,7 +50,7 @@ get_header();
 
     <div class="break"></div>
     <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-    <p class="pageCount"><?php echo ($paged-1) * $wp_query->post_count + 1; ?> - <?php echo $paged * $wp_query->post_count; ?> CỦA <?php echo $wp_query->found_posts?> <?php echo $category[0]->cat_name; ?></p>
+    <p class="pageCount"><?php echo ($paged-1) * $wp_query->post_count + 1; ?> - <?php echo $paged * $wp_query->post_count; ?> CỦA <?php echo $wp_query->found_posts?> <?php echo single_cat_title(); ?></p>
     <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     <?php else : ?>
         Không có dữ liệu

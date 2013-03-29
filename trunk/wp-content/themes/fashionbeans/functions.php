@@ -618,10 +618,10 @@ function menu_bar() {
             if($menu_item->menu_item_parent!=0) {
                 if($count==0) {
                     $menu_list .= '<div class="multi_menu"><div class="arrow_menu"></div><div class="menuBack">';
-                    $menu_list .= '<h3>Mens Fashion Categories &amp; Trending Articles</h3>';
+                    $menu_list .= '<h3>'. category_description($menu_item->menu_item_parent) .'</h3>';
                     $menu_list .= '<div class="multiLinks left">';
                 }
-
+                
                 $menu_list .= '<a href="'. $url .'">'. $title .'</a>';
 
                 $count++;
