@@ -1,59 +1,33 @@
+<?php
+/**
+ * Template Name: List theo chiều dọc
+ */
+
+get_header();
+?>
+<div class="breadcrumb">
+    
+<?php ;
+    $cat_id = 9;
+    $post_of_page = 2;
+?>
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php echo single_cat_title(); ?></h1>
+</div>
+
 <div id="catmainBody" class="left">
     <div class="featuredScroller jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
-      <?php
-        $numberposts = 5;
-        $cats = get_the_category();
-        $category_ids = $cats[0]->cat_ID;
-        $args = array(
-            'numberposts'     => $numberposts,
-            'offset'          => 0,
-            'category'        => $category_ids,
-            'orderby'         => 'post_date',
-            'order'           => 'DESC',
-            'include'         => '',
-            'exclude'         => '',
-            'post_type'       => 'post',
-            'post_status'     => 'publish' 
-        );
-        
-        $recent_posts = get_posts( $args );
-        $count = count($recent_posts);        
-    ?>
-        <div class="scrollerControls">
-            <?php foreach(range(1,$count) as $index): ?>
-                <a href="#" class="inactive"><?php echo $index; ?></a>            
-            <?php endforeach; ?>
-        </div>
-        <div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;">
-            <ul class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: -1350px; width: 3375px;">
-                <?php foreach($recent_posts as $post): setup_postdata($post); ?>
-                <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" style="float: left; list-style: none; width: 675px;" jcarouselindex="1"> 
-                    <a href="<?php the_permalink() ?>">
-                         <?php echo get_the_post_thumbnail($post->ID,'slide_show'); ?> 
-                        <div class="featuredInfo" style="display: none;"> 
-                            <span>
-                                <?php $category = get_the_category( $post->ID );
-                                    echo $category[0]->cat_name;?>
-                            </span>
-                            <h2><?php the_title(); ?></h2>
-                        </div> 
-                    </a>
-                </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-        <div class="jcarousel-prev jcarousel-prev-horizontal" style="top: 135px; display: none;"></div>
-        <div class="jcarousel-next jcarousel-next-horizontal" style="top: 135px; display: none;"></div>        
+        <?php get_slide_show() ?>        
     </div>
-    
     
     <div class="blacktop"> 
-        <span class="blackheader">Mới nhất: 
-            <?php $category = get_the_category(); 
-                echo $category[0]->cat_name; ?>
+        <span class="blackheader">Mới nhất:
+            <?php echo single_cat_title() ?>
         </span>
     </div>
-    <?php if ( have_posts() ) : ?>
+    <?php 
+    query_posts(array('posts_per_page'  => $post_of_page,'paged' => $paged));    
+    if ( have_posts() ) :  
+    ?>
     <?php while ( have_posts() ) : the_post(); ?>
     <div class="catArticles"> 
         <a href="<?php the_permalink() ?>" class="left relative">
@@ -78,8 +52,8 @@
     <?php endwhile; ?>
 
     <div class="break"></div>
-    <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
-    <p class="pageCount"><?php echo ($paged-1) * $wp_query->post_count + 1; ?> - <?php echo $paged * $wp_query->post_count; ?> CỦA <?php echo $wp_query->found_posts?> <?php echo $category[0]->cat_name; ?></p>
+    <?php $paged = (!empty($paged)) ? $paged : 1; ?>
+    <p class="pageCount"><?php echo ($paged-1) * $wp_query->post_count + 1; ?> - <?php echo $paged * $wp_query->post_count; ?> CỦA <?php echo $wp_query->found_posts?> <?php echo single_cat_title(); ?></p>
     <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     <?php else : ?>
         Không có dữ liệu
@@ -89,3 +63,8 @@
 
 <?php get_sidebar(); ?>
 <div class="break"></div>
+
+<?php
+get_footer(); 
+
+?>
