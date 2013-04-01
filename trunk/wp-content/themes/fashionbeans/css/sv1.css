@@ -1,0 +1,215 @@
+/* WRAPPERS */
+#results .gsc-result {
+padding:0 0 10px 0;
+border:none;
+border-bottom:1px dashed #CCC;
+width:675px;
+margin:0 25px 10px 0;
+}
+#results .gs-result {
+border-left:3px solid #eee;
+width:662px;
+padding:6px 5px 6px 10px;
+}
+#results .gs-result:hover {
+border-left:3px solid #CCC;
+background: #EEE;
+}
+#results .gsc-adBlockVertical {
+width:300px;
+overflow:hidden;
+-webkit-text-size-adjust: 100%;
+}
+#results .gsc-adBlockVertical * {
+-webkit-text-size-adjust: 100%;
+}
+
+/* RESULT DESCRIPTION */
+#results .gs-webResult .gs-snippet {
+color: #666;
+font-family:'PT Serif W01 Book', Georgia, "Times New Roman", Times, serif;
+font-size:13px;
+padding:0 0 8px 0;
+}
+
+/* RESULT TITLE STYLES */
+#results .gs-title, #results .gs-title b {
+padding:3px 0;
+font-family:'NewsGothicBTW01-BoldExt', Helvetica, Arial, Tahoma, Verdana, sans-serif;;
+font-size:24px;
+line-height:32px;
+text-transform:capitalize;
+margin:0;
+letter-spacing:normal;
+font-weight:normal;
+color:#111;
+text-decoration:none;
+}
+#results .gs-title b, .searchterms {
+background:#FFFFCC;
+padding:0 3px;
+}
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-webResult.gs-result a.gs-title:visited,
+.gs-webResult.gs-result a.gs-title:visited b,
+.gs-imageResult a.gs-title:visited,
+.gs-imageResult a.gs-title:visited b {
+color:#000;
+}
+.gs-webResult.gs-result a.gs-title:hover,
+.gs-webResult.gs-result a.gs-title:hover b,
+#results .gs-title:hover, 
+#results .gs-title:hover b {
+text-decoration:underline;
+}
+
+/* RESULT URL STYLES */
+#results .gs-webResult div.gs-visibleUrl {
+margin:5px 0 8px 0;
+color: #999;
+font-family:'PT Serif W01 Book', Georgia, "Times New Roman", Times, serif;
+font-style:italic;
+font-size:12px;
+}
+#results .gs-webResult div.gs-visibleUrl-short,
+#results .gs-promotion div.gs-visibleUrl-short {
+display: none;
+}
+#results .gs-webResult div.gs-visibleUrl-long,
+#results .gs-promotion div.gs-visibleUrl-long {
+display: block;
+}
+
+/* PAGING STYLES */
+.gsc-cursor-box {
+margin:20px 0 0 0;
+font-size:16px;
+line-height:16px;
+}
+#results .gsc-cursor-box .gsc-cursor-page {
+color: #111;
+text-decoration:none;
+}
+.gsc-cursor-box .gsc-cursor-page {
+border:1px solid #ccc;
+padding:3px 8px;
+font-size:16px;
+background:#eee;
+text-decoration:none;
+color:#111;
+}
+.gsc-cursor-box .gsc-cursor-page:hover {
+background:#CCC;
+color:#FFF;
+}
+#results .gsc-cursor-box .gsc-cursor-current-page {
+border-color: #CCC;
+background-color: #AD914A;
+font-weight:normal;
+color:#FFF;
+}
+
+/* THUMBNAIL STYLES */
+#results .gsc-table-cell-thumbnail img, #results .gsc-table-cell-thumbnail div {
+width:200px;
+max-width:200px;
+max-height:133px;
+height:133px;
+border:none;
+margin:0 5px 0 0;
+}
+
+/* Top Section */
+#results .gsc-above-wrapper-area {
+border-top:1px solid #CCC;
+border-bottom:15px solid #000;
+padding:10px 0 15px 0;
+margin:0 0 10px 0;
+}
+#results .gsc-result-info{
+margin:0;
+padding:0;
+color:#111;
+font-size:14px;
+font-weight:normal;
+font-family:'PT Serif W01 Book', Georgia, "Times New Roman", Times, serif;
+}
+#results .gsc-selected-option {
+color:#111;
+font-size:14px;
+font-weight:normal;
+font-family:'PT Serif W01 Book', Georgia, "Times New Roman", Times, serif;
+}
+#results .gsc-orderby-label {
+font-weight:bold;
+text-transform:uppercase;
+font-family:'PT Serif W01 Book', Georgia, "Times New Roman", Times, serif;
+color:#111;
+}
+#results .gsc-selected-option-container  {
+cursor:pointer;
+}
+#results .gsc-option-menu-item-highlighted {
+background:#CCC;
+}
+#results .gsc-option {
+display:block;
+padding:5px 40px 5px 10px;
+font-family:'PT Serif W01 Book', Georgia, "Times New Roman", Times, serif;
+}
+#results .gsc-option-menu-item {
+margin:0;
+padding:0;
+}
+#results .gsc-option:hover {
+background:#0099FF;
+color:#FFF;
+}
+#results .gs-per-result-labels {
+display:none;
+}
+
+/* SEARCH TABS */
+#results .gsc-tabHeader {
+padding:6px 20px;
+font-size:18px;
+text-transform:uppercase;
+border:none;
+font-family:'NewsGothicBTW01-ExtraCn', Helvetica, Arial, Tahoma, Verdana, sans-serif;
+margin:0;
+letter-spacing:1px;
+}
+#results .gsc-tabsArea {
+margin:0;
+padding:0;
+border-top:1px solid #CCC;
+border-left:1px solid #CCC;
+}
+#results .gsc-tabhActive {
+background:#000;
+color:#FFF;
+border-right:1px solid #CCC;
+border-left:none;
+}
+#results .gsc-tabhInactive {
+background:#FFF;
+color:#111;
+border-right:1px solid #CCC;
+border-left:none;
+}
+#results .gsc-tabhInactive:hover {
+background:#000;
+color:#FFF;
+}
+
+/* Spelling Mistakes Etc. */
+#results .gs-spelling {
+font-size:16px;
+font-family:'PT Serif W01 Book', Georgia, "Times New Roman", Times, serif;
+}
+
+/* AD BLOCK */
+#results .gsc-adBlockVertical {
+background-color:#EEE;
+}
