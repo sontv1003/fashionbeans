@@ -240,11 +240,11 @@ h1.voucherCategory {
 
 h1.searchCategory {
 	margin:5px 0 10px;
-	font-size:32px;
-	font-family:NewsGothicBTW01-BoldExt,  Helvetica,  Arial,  Tahoma,  Verdana,  sans-serif;
+	font-size:24px;
+	font-family:Helvetica,  Arial,  Tahoma,  Verdana,  sans-serif;
 	line-height:36px;
 	text-align:left;
-	font-weight:400;
+	font-weight:700;
 	color:#111;
 	text-transform:uppercase;
 }
@@ -410,7 +410,7 @@ span.blackHeaderBox {
 
 .breadcrumb {
 	color:#BBB;
-	font-size:13px;
+	font-size:11px;
 	text-transform:uppercase;
 	letter-spacing:1px;
 	margin:5px 0 10px;
@@ -418,7 +418,7 @@ span.blackHeaderBox {
 
 .breadcrumb h1 {
 	color:#BBB;
-	font-size:13px;
+	font-size:11px;
 	text-transform:uppercase;
 	letter-spacing:1px;
 	margin:0;
@@ -656,6 +656,7 @@ li.fashionnews .topnav {
 	color:#111;
 	width:215px;
 	padding:3px 30px 3px 7px;
+        font-size: 11px;
 }
 
 #navsearchbutton {
@@ -3909,6 +3910,7 @@ li.nomarginAds {
 	width:175px;
 	padding:8px 0;
 	height:18px;
+        font-size: 10px;
 }
 
 #footerSignup {

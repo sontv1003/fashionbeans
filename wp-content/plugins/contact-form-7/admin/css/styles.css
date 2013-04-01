@@ -257,3 +257,9 @@ input.shortcode-in-list-table {
 	width: 100%;
 	border: none;
 }
+h1.entry-title {
+    
+}
+h1.entry-title a {
+    color: #000;
+}
