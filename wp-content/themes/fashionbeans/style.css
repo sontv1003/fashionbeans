@@ -3844,7 +3844,7 @@ li.nomarginAds {
 }
 
 .copyrightNotice img {
-	margin:0 15px 0 0;
+	margin:0 15px 0 -10px;
 }
 
 .footerIcons {
