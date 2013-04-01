@@ -4,7 +4,7 @@ body {
 	font-family:Tahoma, Georgia,  Arial,  Helvetica,  Tahoma,  Lucida Sans,  verdana,  sans-serif;
 	color:#000;
 	background:url(images/bg-body.png) top left;
-	font-size:12px;
+	font-size:11px;
 }
 
 form, select, h1, h2, h3, h4, h5, h6, input, li, ul, ol, div, textarea, img, table {
@@ -219,7 +219,7 @@ strong, b, .bold {
 }
 
 h1.articles {
-	font-size:35px;
+	font-size:33px;
 	font-family:NewsGothicBTW01-BoldExt,  Helvetica,  Arial,  Tahoma,  Verdana,  sans-serif;
 	margin:0;
 	padding:0 0 5px;
@@ -3838,8 +3838,9 @@ li.nomarginAds {
 .copyrightNotice span {
 	margin:0;
 	padding:0;
-	font-size:12px;
+	font-size:11px;
 	-webkit-text-size-adjust:100%;
+        width: 455px;
 }
 
 .copyrightNotice img {
@@ -4038,6 +4039,7 @@ li.nomarginAds {
 }
 .linksBlock ul li {
     list-style-type: none;
+    font-size: 12px;
 }
 .linksBlock:last-child {
     width: 155px;

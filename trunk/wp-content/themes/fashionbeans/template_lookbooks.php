@@ -29,15 +29,16 @@ get_header();
 </div>
 <div class="lookbookCategory">
 <?php   
-    query_posts(array('posts_per_page'  => $post_of_page,'paged' => $paged));
+    //query_posts(array('posts_per_page'  => $post_of_page,'paged' => $paged));
     if ( have_posts() ) :  
 ?>
 <?php $count = 1; while ( have_posts() ) : the_post(); ?>
     <div class="lookbooks" <?php echo ($count%3==0)? 'style="margin-right:0px;"' : ''; ?>>
         <a class="iframe cboxElement" href="/wp-content/themes/newsite/lookbooks/index.php?id=173080" title="Open Lookbook Fullscreen" rel="nofollow">Open Lookbook Fullscreen</a> 
         <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title() ?>">
-            <?php if(!has_post_thumbnail($post->ID)) {?>
-                   <img src="<?php bloginfo( 'template_url' ); ?>/images/no_images.jpg" width="320" height="213" alt="<?php the_title() ?>" />
+            <?php if(has_post_thumbnail($post->ID)) {?>
+                   <!--<img src="<?php bloginfo( 'template_url' ); ?>/images/no_images.jpg" width="320" height="213" alt="<?php the_title() ?>" />-->
+                   <img src="http://localhost/fashionbeans/wp-content/uploads/2013/03/liblib1-675x450-675x340.jpg" width="320" height="213" alt="<?php the_title() ?>" />
               <?php } else {
                   if ( function_exists('has_post_thumbnail') && has_post_thumbnail($post->ID) ) {
                     $thumbnail = wp_get_attachment_image_src(get_the_post_thumbnail($post->ID, 'large_thumb' )); 
@@ -51,10 +52,8 @@ get_header();
             </div> 
         </a>
     </div>
-    <?php if($count%3==0): $count++ ?>
-    <div class="break"></div>
-    <?php endif; ?>
     
-<?php endwhile; ?>
+<?php $count++;  endwhile; ?>
 <?php endif; ?>
+    <div class="break"></div>
 </div>

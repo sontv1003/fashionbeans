@@ -1,8 +1,5 @@
     </div> <!-- end Wrapper -->
         <div class="topLink">
-            <a href="#top" class="backtoTop">
-                <img src="<?php bloginfo( 'template_url' ); ?>/images/new/icons/backtotop.gif"> Lên đầu
-            </a>
         </div>
         
         <div id="footer">
@@ -37,11 +34,11 @@
                     <div class="break"></div>                            
                 </div>
                 <div class="copyrightNotice left"> 
-                    <img alt="FashionBeans.com: Men's Fashion Tips &amp; Complete Men's Style Guide Since 2007" class="left" src="http://static1.fashionbeans.com/resources/images/new/nav/footerlogo.gif"> 
-                        <span>Copyright &copy; BeansPublishing Limited 2007 - <a href="/2013/">2013</a>
-                            . All Rights Reserved.<br> FashionBeans is a trading name of BeansPublishing Limited. Company No. 7740652<br> 
-                                    FashionBeans.com: Men's Fashion Tips &amp; Complete Men's Style Guide Since 2007.
-                        </span>
+                    <img alt="Welook.vn" class="left" src="<?php bloginfo('template_url'); ?>/images/footerlogo.jpg"> 
+                    <span class="left">Copyright &copy; BeansPublishing Limited 2007 - <a href="/2013/">2013</a>
+                        . All Rights Reserved.<br> Wellok is a trading name of BeansPublishing Limited.<br> 
+                        Welook.vn: Men's Fashion Tips &amp; Complete Men's Style Guide Since 2007.
+                    </span>
                 </div>
                 <div class="break"></div>
                 <script src="<?php bloginfo('template_url'); ?>/js/features.min.js" language="javascript" type="text/javascript"></script>
@@ -58,8 +55,7 @@
                         touchwipe("#fbtv-homepage");
                         //validateForms("#commentform");
                     });
-                </script>
-                <img alt="" src="http://stats.wordpress.com/g.gif?host=www.fashionbeans.com&amp;rand=0.5231645695584823&amp;v=ext&amp;j=1%3A2.2&amp;blog=5414061&amp;post=0&amp;tz=0&amp;ref=http%3A//www.fashionbeans.com/category/mens-fashion/" id="wpstats">                                
+                </script>                                
             </div>
         </div> <!-- end Footer -->
 <?php wp_footer(); ?>
