@@ -9,7 +9,7 @@ get_header();
     
 <?php ;
     $cat_id = 9;
-    $post_of_page = 2;
+    $post_of_page = 10;
 ?>
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php echo single_cat_title(); ?></h1>
 </div>
@@ -25,7 +25,7 @@ get_header();
         </span>
     </div>
     <?php 
-    query_posts(array('posts_per_page'  => $post_of_page,'paged' => $paged));    
+    //query_posts(array('posts_per_page'  => $post_of_page,'paged' => $paged));    
     if ( have_posts() ) :  
     ?>
     <?php while ( have_posts() ) : the_post(); ?>
