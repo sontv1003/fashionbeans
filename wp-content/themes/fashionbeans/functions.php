@@ -692,6 +692,7 @@ function the_excerpt_max_charlength($charlength) {
 }
 
 if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'small_thumb', 150, 75, true);
     add_image_size( 'default_thumb', 300, 200, true);
     add_image_size( 'normal_thumb', 254, 400, true);
     add_image_size( 'large_thumb', 500, 333, true);
