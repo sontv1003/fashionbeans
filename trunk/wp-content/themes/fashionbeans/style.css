@@ -4,7 +4,7 @@ body {
 	font-family:Tahoma, Georgia,  Arial,  Helvetica,  Tahoma,  Lucida Sans,  verdana,  sans-serif;
 	color:#000;
 	background:url(images/bg-body.png) top left;
-	font-size:11px;
+	font-size:12px;
 }
 
 form, select, h1, h2, h3, h4, h5, h6, input, li, ul, ol, div, textarea, img, table {
@@ -872,7 +872,7 @@ li.fashionnews .topnav {
 }
 
 .sidebar .connect {
-	margin:0 0 15px;
+	margin:0 0 30px;
 }
 
 .sidebar .connect li {
@@ -1543,7 +1543,7 @@ ul.rhsNews li img {
 }
 
 .catArticles p {
-	font-size:14px;
+	font-size:13px;
 	color:#666;
 }
 
@@ -4176,4 +4176,45 @@ li.nomarginAds {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006600',endColorstr='#33CC00',GradientType=0);
     border-color: #3C0 #3C0 #060;
     border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+
+.widget  {
+    
+}
+.widget ul {
+    
+}
+.widget ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+.widget ul li a{
+    color: #000;
+}
+.widget ul li a:hover {
+    text-decoration: underline;
+    color: #ccc;
+}
+
+.dpe-flexible-posts img { float: left;}
+.dpe-flexible-posts h4 { 
+    float: left; font-size: 12px;
+    line-height: 25px;
+    margin-left: 10px;
+    width: 175px;
+}
+.dpe-flexible-posts li {
+    border-bottom: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.dpe-flexible-posts li:after {
+    clear: both;
+}
+
+.dpe-flexible-posts li:before,
+.dpe-flexible-posts li:after {
+  display: table;
+  content: "";
+  line-height: 0;
 }
