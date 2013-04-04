@@ -714,6 +714,7 @@ li.fashionnews .topnav {
 	left:0;
 	bottom:25px;
 	z-index:2;
+        text-align: left;
 }
 
 .featuredInfo h2 {
@@ -2514,6 +2515,7 @@ cboxClose:hover {
 .articleImage {
 	margin:0 0 5px;
 	position:relative;
+        text-align: center;
 }
 
 .articleImage img {
@@ -4196,9 +4198,14 @@ li.nomarginAds {
     color: #09F;
 }
 
-.dpe-flexible-posts img { float: left;}
+.dpe-flexible-posts img { 
+    float: left;
+    height: 60px;
+    width: 112px;
+}
 .dpe-flexible-posts h4 { 
-    float: left; font-size: 12px;
+    float: left; 
+    font-size: 12px;
     line-height: 25px;
     margin-left: 10px;
     width: 175px;
@@ -4217,4 +4224,9 @@ li.nomarginAds {
   display: table;
   content: "";
   line-height: 0;
+}
+.slide-show {
+    position: relative;
+    background: #000;
+    text-align: center;
 }

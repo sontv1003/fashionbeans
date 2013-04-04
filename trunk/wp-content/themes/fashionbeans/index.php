@@ -2,57 +2,120 @@
     <div class="featuredScroller jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
         <?php get_slide_show() ?>        
     </div>
+
+
+<!-- START LAM DEP -->
+
+<?php $cat_id = 6; ?>
     <div class="left maincolumn">
         <div class="blacktop"> 
-            <span class="blackheader">The <a href="/category/mens-fashion-news/">Latest Fashion &amp; Style News</a>
-            </span>
-        </div>
+            <span class="blackheader"><a href="<?php echo get_category_link($cat_id) ?>"><?php echo get_cat_name($cat_id) ?></a></span>
+        </div>        
         <div class="homeNewsBorder">
-            <div class="homeNewsOutline">
-                <div class="homeNews"> <a href="http://www.fashionbeans.com/2013/bay-fyfe-scarves/"> 
+<?php
+ $home_post1 = get_posts('numberposts=4&category='.$cat_id);
+ $index = 1;
+ foreach($home_post1 as $post) : setup_postdata($post);
+ ?>
+            <div <?php echo ($index%2==0) ? 'style="margin:10px 0 0 0;"' : ""?> class="homeNewsOutline">
+                <div class="homeNews"> 
+                    <a href="<?php the_permalink() ?>"> 
                         <span class="imageHolder">
-                            <img height="100" class="left" alt="Bay &amp; Fyfe Scarves" src="http://static2.fashionbeans.com/wp-content/uploads/2013/03/baymain-150x150.jpg">
+                            <?php the_post_thumbnail(array(100,100)); ?>                            
                         </span> 
-                        <span class="articleTitle">Bay &amp; Fyfe Scarves</span>
-                        <span class="previewText">Australian brand Bay &amp; Fyfe's limited edition scarf collection is now available in the UK. The label...</span>
+                        <span class="articleTitle"><?php the_title() ?></span> 
+                        <span class="previewText"><?php the_excerpt_max_charlength(200); ?></span>
                     </a>
                     <div class="break"></div>                    
                 </div>                
             </div>
-            <div style="margin:10px 0 0 0;" class="homeNewsOutline"><div class="homeNews"> <a href="http://www.fashionbeans.com/2013/head-porter-bags-jackson-collection/"> 
-                        <span class="imageHolder"><img height="100" class="left" alt="Head Porter Bags: Jackson Collection" src="http://static1.fashionbeans.com/wp-content/uploads/2013/03/head-150x150.jpg"></span> 
-                        <span class="articleTitle">Head Porter Bags: Jackson Collection</span> 
-                        <span class="previewText">Head Porter Bags have released a new spring/summer 2013 collection, entitled 'Jackson'. Named after...</span></a>
-                    <div class="break"></div>                    
-                </div>                
-            </div>
-            <div class="homeNewsOutline">
-                <div class="homeNews"> <a href="http://www.fashionbeans.com/2013/nike-undercover-gyakusou-ss13-collection/"> 
-                        <span class="imageHolder"><img height="100" class="left" alt="Nike x Undercover Gyakusou Clothing: SS13 Collection" src="http://static4.fashionbeans.com/wp-content/uploads/2013/03/nikeunmain-150x150.jpg"></span> 
-                        <span class="articleTitle">Nike x Undercover Gyakusou Clothing: SS13 Collection</span>
-                        <span class="previewText">The Nike x Undercover Gyakusou clothing collection offers a range of running gear that marries Japanese...</span></a>
-                    <div class="break"></div>                    
-                </div>                
-            </div>
-            <div style="margin:10px 0 0 0;" class="homeNewsOutline">
-                <div class="homeNews">
-                    <a href="http://www.fashionbeans.com/2013/anerkjendt-oliver-leopard-embroidered-sweater/"> 
-                        <span class="imageHolder">
-                            <img height="100" class="left" alt="Anerkjendt Oliver Leopard Embroidered Sweater" src="http://static4.fashionbeans.com/wp-content/uploads/2013/03/oliversweat4-150x150.jpg"></span> 
-                        <span class="articleTitle">Anerkjendt Oliver Leopard Embroidered Sweater</span> 
-                        <span class="previewText">The Anerkjendt Oliver Leopard Embroidered Sweater takes a menswear classic and gives it a contemporary...</span>
-                    </a>
-                    <div class="break"></div>                    
-                </div>                
-            </div>
+ 
+<?php $index++; endforeach; ?>
             <div class="break"></div>            
         </div>        
     </div>
+
+<!-- END LAM DEP -->
+
+<!--  -->
+
+<div class="blacktop left maincolumn">
+    <h2>
+        <a href="http://www.fashionbeans.com/category/mens-street-style/">Men's Street Style Photography</a>
+    </h2>
+    <ul class="streetStyleHome">
+        <li>
+            <a rel="nofollow" href="http://www.fashionbeans.com/2013/anonymous-362/">
+                <img width="127" height="200" alt="Anonymous" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/anonymous376-150x235.jpg">
+            </a>
+        </li>
+        <li>
+            <a rel="nofollow" href="http://www.fashionbeans.com/2013/anonymous-360/">
+                <img width="127" height="200" alt="Anonymous" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/anonymous374-150x235.jpg"></a></li>
+                <li><a rel="nofollow" href="http://www.fashionbeans.com/2013/anonymous-364/"><img width="127" height="200" alt="Anonymous" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/anonymous378-150x235.jpg"></a></li><li><a rel="nofollow" href="http://www.fashionbeans.com/2013/ovadia-sons/"><img width="127" height="200" alt="Ovadia &amp; Sons" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/sons-150x235.jpg"></a></li><li class="nomargin"><a rel="nofollow" href="http://www.fashionbeans.com/2013/dennis-askins/"><img width="127" height="200" alt="Dennis Askins" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/dennis2-150x235.jpg"></a></li><li><a rel="nofollow" href="http://www.fashionbeans.com/2013/anonymous-363/"><img width="127" height="200" alt="Anonymous" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/anonymous377-150x235.jpg"></a></li><li><a rel="nofollow" href="http://www.fashionbeans.com/2013/anonymous-359/"><img width="127" height="200" alt="Anonymous" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/anonymous373-150x235.jpg"></a></li><li><a rel="nofollow" href="http://www.fashionbeans.com/2013/david-thielebule/"><img width="127" height="200" alt="David Thielebule" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/david9-150x235.jpg"></a></li><li><a rel="nofollow" href="http://www.fashionbeans.com/2013/alex-4/"><img width="127" height="200" alt="Alex" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/alex7-150x235.jpg"></a></li><li class="seemoreStreet nomargin"><a href="http://www.fashionbeans.com/category/mens-street-style/">Click Here To See More...</a>
+        </li>
+    </ul>
+    <div class="break"></div>
+    
+</div>
+<!-- -->
+
+<!-- COMMENT VIEW -->
+<div class="rhsMostPopular right">
+    <div style="position: relative; display: block;" class="jcarousel-container jcarousel-container-horizontal">
+        <div style="position: relative;" class="jcarousel-clip jcarousel-clip-horizontal">
+            <ul style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 600px;" class="jcarousel-list jcarousel-list-horizontal" id="mostPopular">
+                <li jcarouselindex="1" style="float: left; list-style: none; width: 300px;" class="popularLists jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal">
+                    <div class="blacktop left">
+                        <h2>Xem nhiều nhất</h2>
+                        <ul class="rhsNews">
+                            <li>
+                                <a href="http://www.fashionbeans.com/2013/mens-hair-trends-for-ss13/">
+                                    <img width="120" height="60" alt="hairss13" class="attachment-120,60x120,60 wp-post-image" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/hairss13-150x75.jpg">
+                                    <span>Men's Hair Trends For Spring/Summer 2013</span>
+                                </a>
+                            </li>
+                            <li><a href="http://www.fashionbeans.com/2013/picking-a-new-hairstyle/">
+                                    <img width="120" height="60" alt="hairmain2" class="attachment-120,60x120,60 wp-post-image" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/hairmain2-150x75.jpg"><span>Picking A New Men's Hairstyle</span>
+                                </a>
+                            </li>
+                            <li><a href="http://www.fashionbeans.com/2013/how-to-look-good-on-campus/"><img width="120" height="60" alt="campus" class="attachment-120,60x120,60 wp-post-image" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/campus-150x75.jpg"><span>How To Look Good: On Campus</span></a></li><li><a href="http://www.fashionbeans.com/2013/five-ss13-menswear-staples/"><img width="120" height="60" alt="staples" class="attachment-120,60x120,60 wp-post-image" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/staples-150x75.jpg"><span>Five SS13 Menswear Staples </span></a></li><li><a href="http://www.fashionbeans.com/2013/mens-ss13-fashion-trend-stripes/"><img width="120" height="60" alt="stripesmain" class="attachment-120,60x120,60 wp-post-image" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/stripesmain-150x75.jpg"><span>Men's SS13 Fashion Trend: Stripes</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li jcarouselindex="2" style="float: left; list-style: none; width: 300px;" class="popularLists jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal">
+                    <div class="blacktop left">
+                        <h2>Comment nhiều nhất</h2>
+                        <ul class="rhsNews">
+                            <li>
+                                <a href="http://www.fashionbeans.com/2013/mens-hair-trends-for-ss13/">
+                                    <img alt="Men’s Hair Trends For Spring/Summer 2013" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/hairss13-150x75(1).jpg">
+                                    <span>Men’s Hair Trends For Spring/Summer 2013</span>
+                                </a>
+                            </li>
+                            <li><a href="http://www.fashionbeans.com/2013/mens-fashion-basics-vintage-shopping/"><img alt="Men’s Fashion Basics &ndash; Part 87 &ndash; Vintage Shopping" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/vintagemain3-150x75.jpg"><span>Men’s Fashion Basics &ndash; Part 87 &ndash; Vintage Shopping</span></a></li><li><a href="http://www.fashionbeans.com/2013/the-ultimate-streamlined-capsule-wardrobe/"><img alt="The Ultimate Streamlined Capsule Wardrobe" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/capsule-150x75.gif"><span>The Ultimate Streamlined Capsule Wardrobe</span></a></li><li><a href="http://www.fashionbeans.com/2013/mens-fashion-trend-tailored-shorts-suits/"><img alt="Men’s SS13 Fashion Trend: Tailored Shorts &amp; Shorts Suits" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/tailoredshorts-150x75.jpg"><span>Men’s SS13 Fashion Trend: Tailored Shorts &amp; Shorts Suits</span></a></li><li><a href="http://www.fashionbeans.com/2013/how-to-tell-if-youre-a-menswear-addict/"><img alt="How To Tell If You’re A Menswear Addict" src="./Men's Fashion Tips and Men's Style Guide  FashionBeans_files/menswearaddict-150x75.jpg"><span>How To Tell If You’re A Menswear Addict</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popularControls"> 
+        <span class="pop-prev">Previous</span>
+        <a class="active" href="http://www.fashionbeans.com/#">1</a> 
+        <a class="inactive" href="http://www.fashionbeans.com/#">2</a> 
+        <span class="pop-next">Next</span>
+    </div>
+</div>
+<div class="break"></div>
+
+
     <div class="cpmAdapt right">
         
     </div>
     <div class="break"></div>
-<!-- -->     
+  
     <div class="left maincolumn twentyTop">
         <div class="blacktop"><h2>The Latest Fashion &amp; Style Articles</h2></div>
         <div class="home-twoColumn left">
@@ -93,8 +156,8 @@
         </div>
     </div>
    <div class="sidebar right twentyTop">
-       <div class="blacktop"> 
-           <span class="blackHeaderBox"></span>
+       <div class="blacktop">           
+           <span class="blackHeaderBox"><h2>Quảng cáo</h2></span>
        </div>
        <ul class="sponsorsRHS">
            <li><a rel="nofollow" target="_blank" href="http://out.fashionbeans.com/uo125ad">
@@ -201,35 +264,41 @@
             <span class="previewText">Gone are the days when clean shaven was the only way to look well groomed. Some of the most stylish &amp; sophisticated men on the planet are adopting a more rugged approach to facial hair, &amp; from bar to...</span>
         </div>
     </div>
+    
+<!-- CATEGORY TIN TỨC -->  
+
+<?php $cat_id = 9;?>    
     <div class="sidebar right twentyTop">
         <div class="blacktop">
-            <h2>Mới nhất: <a href="http://www.fashionbeans.com/category/mens-fitness-muscle-building/">Men's Fitness</a></h2>
+            <h2><a href="<?php echo get_category_link($cat_id) ?>"><?php echo get_cat_name($cat_id) ?></a></h2>
         </div>
-        <div style="margin:15px 0 0 0;width:300px;" class="homeNewsOutline">
-            <div class="homeNews">
-                <a href="http://www.fashionbeans.com/2013/top-5-home-based-exercises/">
-                    <span class="imageHolder">
-                        <img height="100" class="left" alt="Top 5 Home Based Exercises" src="http://static2.fashionbeans.com/wp-content/uploads/2013/03/homeexercise-150x150.jpg">
-                    </span> 
-                    <span class="articleTitle fitnessTitle">Top 5 Home Based Exercises</span>
-                    <span class="previewText">Our fitness expert breaks down his Top 5 Home Based Exercises. These five exercises are some of the...</span>
-                </a>
-                <div class="break"></div>                
-            </div>            
-        </div>
+        
+<?php
+    $home_news = get_posts('numberposts=5&category='.$cat_id);
+    $index = 0;
+    foreach($home_news as $post) : setup_postdata($post);
+?>
+        <?php if($index > 0) { ?>
         <div class="homeNewsOutline fitnessHome">
+        <?php } else { ?>
+        <div style="margin:15px 0 0 0;width:300px;" class="homeNewsOutline">
+        <?php } ?>
             <div class="homeNews">
-                <a href="http://www.fashionbeans.com/2013/the-benefits-of-eccentric-resistance-training/">
+                <a href="<?php the_permalink() ?>">
                     <span class="imageHolder">
-                        <img height="100" class="left" alt="The Benefits Of Eccentric Resistance Training" src="http://static3.fashionbeans.com/wp-content/uploads/2013/03/eccentric-150x150.jpg">
+                         <?php the_post_thumbnail(array(100,100)); ?> 
                     </span> 
-                    <span class="articleTitle fitnessTitle">The Benefits Of Eccentric Resistance Training</span>
-                    <span class="previewText">We breakdown the Benefits Of Eccentric Resistance Training, i.e. focusing on the negative portion of...</span>
+                    <span class="articleTitle fitnessTitle"><?php the_title() ?></span>
+                    <span class="previewText"><?php the_excerpt_max_charlength(100); ?></span>
                 </a>
                 <div class="break"></div>                
             </div>            
         </div>
+<?php $index++; endforeach; ?>
     </div>
+
     <div class="break"></div>
+    
+<!-- END CATEGORY TIN TỨC -->    
     
 <?php get_footer();?>

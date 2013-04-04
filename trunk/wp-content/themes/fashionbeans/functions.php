@@ -768,10 +768,14 @@ function get_category_top_parent_id() {
 }
 
 
-function get_slide_show() {
-        $numberposts = 5;
-        $cats = get_the_category();
-        $category_ids = $cats[0]->cat_ID;
+function get_slide_show($numberposts = 5) {        
+        if(is_home()) {
+            $category_ids = '6,9';
+        } else {
+            $cats = get_the_category();
+            $category_ids = $cats[0]->cat_ID;            
+        }
+            
         $args = array(
             'numberposts'     => $numberposts,
             'offset'          => 0,
@@ -792,7 +796,7 @@ function get_slide_show() {
                 <a href="#" class="inactive"><?php echo $index; ?></a>            
             <?php endforeach; ?>
         </div>
-        <div class="jcarousel-clip jcarousel-clip-horizontal" style="position: relative;">
+        <div class="jcarousel-clip jcarousel-clip-horizontal slide-show">
             <ul class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: -1350px; width: 3375px;">
                 <?php foreach($recent_posts as $post): setup_postdata($post); ?>
                 <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" style="float: left; list-style: none; width: 675px;" jcarouselindex="1"> 
@@ -801,7 +805,8 @@ function get_slide_show() {
                         <div class="featuredInfo" style="display: none;"> 
                             <span>
                                 <?php $category = get_the_category( $post->ID );
-                                    echo $category[0]->cat_name;?>
+                                    echo $category[0]->cat_name;
+                                ?>
                             </span>
                             <h2><?php the_title(); ?></h2>
                         </div> 
