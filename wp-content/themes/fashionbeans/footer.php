@@ -23,7 +23,7 @@
                         <li>
                             <a title="FashionBeans RSS Feed" rel="nofollow" target="_blank" href="http://out.fashionbeans.com/rss/" class="rssFooter">FashionBeans RSS Feed</a>
                         </li>
-                    </ul>
+                    </ul><?php echo do_shortcode('[wysija_form id="2"]') ?>
                     <div class="break"></div> 
                     <span>Nhận tin từ Welook</span>
                     <p>Đăng ký để nhận các tin tức cập nhật mới nhất từ Welook</p>
