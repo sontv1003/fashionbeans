@@ -4,7 +4,7 @@ Plugin Name: Jamie Social Icons
 Plugin URI: http://www.martiniboy.co.uk/wordpress-plugins/jamie-social-icons/
 Description: Add Facebook Like, Tweet, Google Plus 1, Pinterest and Linkedin button at bottom/top of page/post and now track your social links with google analytics
 Author: Jamie Grove
-Version: 0.9.8.2
+Version: 0.9.8.3
 Author URI: http://www.martiniboy.co.uk
 */
 /*  Copyright 2012  Jamie Grove  (email : jamie@martiniboy.co.uk)

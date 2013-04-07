@@ -57,7 +57,7 @@ ul.jamie_social.martinicenter li.martinifb {
 li.pin {
 	position: relative;	
 }
-a.pinarea {
+li.pin a.pinarea {
 	position:absolute;
 	width: 43px;
 	height: 20px;

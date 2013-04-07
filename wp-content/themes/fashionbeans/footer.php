@@ -9,19 +9,19 @@
                     <span>Kết nối cùng WELOOK</span>
                     <ul>
                         <li style="margin-left:0;">
-                            <a title="FashionBeans Official Facebook Page" target="_blank" href="http://www.facebook.com/fashionbeansOfficial" class="fbFooter">FashionBeans Official Facebook Page</a>
+                            <a title="Wellok Facebook Page" target="_blank" href="http://www.facebook.com/fashionbeansOfficial" class="fbFooter">Wellok Official Facebook Page</a>
                         </li>
                         <li>
-                            <a title="FashionBeans Official Twitter" target="_blank" href="http://www.twitter.com/fashionbeans/" class="twitterFooter">FashionBeans Official Twitter</a>
+                            <a title="Wellok Twitter" target="_blank" href="http://www.twitter.com/fashionbeans/" class="twitterFooter">Wellok Official Twitter</a>
                         </li>
                         <li>
-                            <a title="FashionBeans Google +1 Page" target="_blank" href="http://www.google.com/+fashionbeans" class="googleFooter">FashionBeans Google +1 Page</a>
+                            <a title="Wellok Google +1 Page" target="_blank" href="http://www.google.com/+fashionbeans" class="googleFooter">Wellok Google +1 Page</a>
                         </li>
                         <li>
-                            <a title="FashionBeans Tumblr" target="_blank" href="http://tumblr.fashionbeans.com/" class="tumblrFooter">FashionBeans Tumblr</a>
+                            <a title="Wellok Tumblr" target="_blank" href="http://tumblr.fashionbeans.com/" class="tumblrFooter">Wellok Tumblr</a>
                         </li>
                         <li>
-                            <a title="FashionBeans RSS Feed" rel="nofollow" target="_blank" href="http://out.fashionbeans.com/rss/" class="rssFooter">FashionBeans RSS Feed</a>
+                            <a title="Wellok RSS Feed" rel="nofollow" target="_blank" href="http://out.fashionbeans.com/rss/" class="rssFooter">Wellok RSS Feed</a>
                         </li>
                     </ul><?php echo do_shortcode('[wysija_form id="2"]') ?>
                     <div class="break"></div> 
