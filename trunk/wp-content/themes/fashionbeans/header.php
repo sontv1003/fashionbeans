@@ -28,7 +28,7 @@
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 */
-	global $page, $paged,$cat_id;
+	global $page, $paged,$cat_id, $wpdb;
 
 	wp_title( '|', true, 'right' );
 
@@ -72,6 +72,10 @@
         <!-- Site bar -->
         <div id="siteBar">
             <div class="infoBar">
+                <div class="sitelinks left">
+                    
+                </div>
+                <!--
                 <ul class="sitelinks left">
                     <li><a class="activeSite" href="/" name="top">FashionBeans</a></li>
                     <li><a href="/forums/" oldtitle="Discuss everything to do with men's fashion, style &amp; grooming." title="" aria-describedby="ui-tooltip-0">Forums</a></li>
@@ -79,7 +83,9 @@
                     <li><a href="/category/offers-and-vouchers/" oldtitle="The Latest fashion discount codes, money off vouchers &amp; offers." title="">Voucher Codes</a></li>
                     <li><a rel="nofollow" href="/category/site-announcements/competitions/" oldtitle="Win Great Prizes From Your Favourite Fashion Brands!" title="" aria-describedby="ui-tooltip-3">Competitions</a></li>
                 </ul>
-                <ul class="right socialIcons">
+                -->
+                
+<!--                <ul class="right socialIcons">
                     <li style="width:83px;" class="facebookLike">
                         <iframe scrolling="no" frameborder="0" allowtransparency="true" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FfashionbeansOfficial&amp;send=false&amp;layout=button_count&amp;width=250&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp;appId=117510971682164"></iframe></li>
                     <li class="twitterFollow"><iframe scrolling="no" frameborder="0" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=fashionbeans&amp;show_screen_name=false&amp;show_count=true" allowtransparency="true"></iframe></li>
@@ -88,7 +94,7 @@
                             <iframe width="100%" scrolling="no" frameborder="0" hspace="0" marginheight="0" marginwidth="0" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" id="I0_1363778451542" name="I0_1363778451542" src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;hl=en-US&amp;origin=http%3A%2F%2Fwww.fashionbeans.com&amp;url=http%3A%2F%2Fwww.fashionbeans.com%2F&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.vi.FfgfQYnUabs.O%2Fm%3D__features__%2Fam%3DQQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTMakUxJfA2zOhhv3GzzbB_WLnlDNg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Conload&amp;id=I0_1363778451542&amp;parent=http%3A%2F%2Fwww.fashionbeans.com&amp;rpctoken=15684379" allowtransparency="true" data-gapiattached="true" title="+1"></iframe>
                         </div>
                     </li>
-                </ul>
+                </ul>-->
             </div>
         </div><!-- End site bar -->
         

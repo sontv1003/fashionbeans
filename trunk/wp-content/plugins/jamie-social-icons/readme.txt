@@ -3,8 +3,8 @@ Contributors: martiniboy
 Donate link: https://www.paypal.com/uk/cgi-bin/webscr?cmd=_flow&SESSION=QS69f8gOW4i2YuLDc1QntoGiP6Hd8ztvzvBiIkDsXafDPos-eVAb_b0i1SO&dispatch=5885d80a13c0db1f8e263663d3faee8db02a037e263542f58098410815cf7df7
 Tags: social share, facebook, linkedin, twitter, google plus, pinterest, Facebook Insights, Google Analytics tracking, Recommend, Like, tweet, Google+,
 Requires at least: 3.1
-Tested up to: 3.4.2
-Stable tag: 0.9.8.2
+Tested up to: 3.5.1
+Stable tag: 0.9.8.3
 
 
 Share your posts & pages with your favourite social sites - Twitter, Facebook, Google Plus, Pinterest And LinkedIn and now trackable with your Google Analytics/ Facebook Insights
@@ -98,8 +98,51 @@ For screenshots <a href="http://www.martiniboy.co.uk/wordpress-plugins/jamie-soc
 
 
 == Changelog ==
-= V0.2 - 14.03.2012 =
-Error in attaching stlesheet - now corrected
+= V0.9.8.3 - 02.04.2013 =
+* Bug Fix - incompatible with other plugins same function name
+* changed Pinterest code to Pinterests Current code - still issue with using multiple PIN buttons only showing count on clicked one!!!
+
+= V0.9.8.2 V0.9.8.2 - 20.11.2012 =
+* Bug Fix error in icons replacing content of posts
+
+= V0.9.8 - 18.11.2012 =
+* Bug Fix with certain plugins icons showing at top of page as well
+* Removed options page from main menu and put it under the settings menu as did not warrant the real estate
+
+= V0.9.7 - 08.10.2012 = 
+* Added Fallback options if default language hides Facebook button or want different language for Like Button
+* Correct Code to show icons only at bottom of post
+
+= V0.9.6 - 07.10.2012 = 
+* Integration with Facebook Insights
+* Ability to show icons at the top and bottom of post
+* Ability to add custom and pre-made text before the icons
+* Tidy up the settings page and file structure
+* Beta Of localizing the code - to allow Facebook show in language of website
+* Option of changing Facebook Like to Facebook recommend
+
+= V0.9.5 - 06.08.2012 = 
+* Structured call to js files
+* Added functionality so you can track your social clicks within your google analytics account
+
+= V0.9.4 - 11.07.2012 = 
+= V0.9.3 - 24.06.2012 = 
+* Bug Fixes
+
+= V0.9.2 - 23.05.2012 = 
+* Corrected Facebook like in IE8 and lower
+* Removed empty li for Google Plus In IE7
+* Add the Count on the Pinterest Button
+* Updated Instructions
+
+= V0.8 - 07.05.2012 =
+= V0.9 - 07.05.2012 =
+* Add ability to add social icons to top or bottom of post automatically
+* BETA version to track social interactions within google analytics.
+
+= V0.7 - 08.04.2012 =
+* Amends to styling
+* Add choice of image for pinterest pin
 
 = V0.3 - 16.03.2012 =
 Bug Fixes
@@ -110,43 +153,20 @@ Bug Fixes
 * Added Shortcode [jamiesocial] functionality
 * Added Tiny MCE Button for shotcode
 
-= V0.7 - 08.04.2012 =
-* Amends to styling
-* Add choice of image for pinterest pin
+= V0.2 - 14.03.2012 =
+Error in attaching stylesheet - now corrected
 
-= V0.8 - 07.05.2012 =
-= V0.9 - 07.05.2012 =
-* Add ability to add social icons to top or bottom of post automatically
-* BETA version to track social interactions within google analytics.
 
-= V0.9.2 - 23.05.2012 = 
-* Corrected Facebook like in IE8 and lower
-* Removed empty li for Google Plus In IE7
-* Add the Count on the Pinterest Button
-* Updated Instructions
 
-= V0.9.3 - 24.06.2012 = 
-= V0.9.4 - 11.07.2012 = 
-* Bug Fixes
 
-= V0.9.5 - 06.08.2012 = 
-* Structured call to js files
-* Added functionality so you can track your social clicks within your google analytics account
 
-= V0.9.6 - 07.10.2012 = 
-* Integration with Facebook Insights
-* Ability to show icons at the top and bottom of post
-* Ability to add custom and pre-made text before the icons
-* Tidy up the settings page and file structure
-* Beta Of localizing the code - to allow Facebook show in language of website
-* Option of changing Facebook Like to Facebook recommend
 
-= V0.9.7 - 08.10.2012 = 
-* Added Fallback options if default language hides Facebook button or want different language for Like Button
-* Correct Code to show icons only at bottom of post
 
-= V0.9.8 - 18.11.2012 =
-* Bug Fix with certain plugins icons showing at top of page as well
-* Removed options page from main menu and put it under the settings menu as did not warrant the real estate
-= V0.9.8.2 V0.9.8.2 - 20.11.2012 =
-* Bug Fix error in icons replacing content of posts
+
+
+
+
+
+
+
+

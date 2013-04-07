@@ -57,3 +57,9 @@ get_header();
 <?php endif; ?>
     <div class="break"></div>
 </div>
+<div class="break"></div>
+
+<?php
+get_footer(); 
+
+?>

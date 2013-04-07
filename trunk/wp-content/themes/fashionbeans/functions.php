@@ -770,7 +770,7 @@ function get_category_top_parent_id() {
 
 function get_slide_show($numberposts = 5) {        
         if(is_home()) {
-            $category_ids = '6,9';
+            $category_ids = '1,3,6,7,9';
         } else {
             $cats = get_the_category();
             $category_ids = $cats[0]->cat_ID;            
@@ -798,8 +798,8 @@ function get_slide_show($numberposts = 5) {
         </div>
         <div class="jcarousel-clip jcarousel-clip-horizontal slide-show">
             <ul class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: -1350px; width: 3375px;">
-                <?php foreach($recent_posts as $post): setup_postdata($post); ?>
-                <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal" style="float: left; list-style: none; width: 675px;" jcarouselindex="1"> 
+                <?php $i=1; foreach($recent_posts as $post): setup_postdata($post); ?>
+                <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-<?php echo $i;?> jcarousel-item-<?php echo $i;?>-horizontal" style="float: left; list-style: none; width: 675px;" jcarouselindex="<?php echo $i;?>"> 
                     <a href="<?php the_permalink() ?>">
                          <?php echo get_the_post_thumbnail($post->ID,'slide_show'); ?> 
                         <div class="featuredInfo" style="display: none;"> 
@@ -812,9 +812,25 @@ function get_slide_show($numberposts = 5) {
                         </div> 
                     </a>
                 </li>
-                <?php endforeach; ?>
+                <?php $i++; endforeach; ?>
             </ul>
         </div>
         <div class="jcarousel-prev jcarousel-prev-horizontal" style="top: 135px; display: none;"></div>
         <div class="jcarousel-next jcarousel-next-horizontal" style="top: 135px; display: none;"></div>
 <?php } ?>
+
+ <?php
+// 
+//function template_change( $template ){
+//    if( is_single() && in_category('cat1') ){
+//        $templates = array("single-cat1.php");
+//    } elseif( is_single() && in_category('cat2') ){
+//        $templates = array("single-cat2.php");
+//    } elseif( is_single() && in_category('cat3') ){
+//        $templates = array("single-cat3.php");
+//    }
+//    $template = locate_template( $templates );
+//    return $template;
+//}
+//add_filter( 'single_template', 'template_change' ); //'template_include'/'single_template'
+?>

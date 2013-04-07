@@ -16,8 +16,8 @@ function jamie_social_add_page() {
 /**
  * Create the options page
  */
-add_action('admin_head', 'admin_register_head');
-function admin_register_head() {
+add_action('admin_head', 'jamiesocial_register_head');
+function jamiesocial_register_head() {
   $url = WP_PLUGIN_URL.'/jamie-social-icons/css/options.css';
   echo "<link rel='stylesheet' href='$url' />\n";
 }
