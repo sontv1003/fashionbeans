@@ -527,7 +527,7 @@ li.fashionnews .topnav {
     top: 0px;
 }
 .multi_menu {	
-    visibility:hidden;
+    visibility:hidden;    
     position:absolute;
     top:50px;
     left:0px;
@@ -545,10 +545,13 @@ li.fashionnews .topnav {
 .menuBack {
 	background:#000;
 	background:rgba(0, 0, 0, 0.95);
-	padding:20px;
+	padding:15px 20px 20px 20px;
 	text-align:left;
 }
-
+.menuBack p {
+    margin: 0px;
+    padding: 0px;
+}
 .multi_menu h3 {
 	font-size:20px;
 	font-family:NewsGothicBTW01-ExtraCn,  Helvetica,  Arial,  Tahoma,  Verdana,  sans-serif;
@@ -557,7 +560,7 @@ li.fashionnews .topnav {
 	display:block;
 	text-transform:uppercase;
 	border-bottom:1px solid #333;
-	padding:0 0 10px;
+	padding:0 0 5px;
 	margin:0 0 20px;
 	font-weight:400;
 }
@@ -612,7 +615,7 @@ li.fashionnews .topnav {
 	background:#EEE;
 	border-bottom:1px solid #000;
 	color:#333;
-	font-size:14px;
+	font-size:11px;
 	text-transform:uppercase;
 	letter-spacing:1px;
 }
@@ -2124,7 +2127,10 @@ ul.streetStyle {
 	top:150px;
 	left:0;
 }
-
+.lookbooks img {
+    width: 320px;
+    height: 213px;
+}
 .lookbooks h2 {
 	font-size:14px;
 	line-height:16px;

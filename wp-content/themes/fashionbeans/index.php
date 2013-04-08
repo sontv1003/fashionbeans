@@ -1,9 +1,12 @@
 <?php get_header(); ?>
-    <div class="featuredScroller jcarousel-container jcarousel-container-horizontal" style="position: relative; display: block;">
+    <div class="featuredScroller jcarousel-container jcarousel-container-horizontal left" style="position: relative; display: block;">
         <?php get_slide_show() ?>        
     </div>
-
-
+    <div class="cpmAdapt right">
+        <?php include 'widget_social.php'; ?>
+    </div>
+    <div class="break"></div>
+    
 <!-- CATEGORY XU HƯỚNG -->
 <?php $cat_id = 5; ?>
     <div class="left maincolumn">
