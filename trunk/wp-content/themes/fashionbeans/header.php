@@ -107,127 +107,39 @@
             </div><!-- end center -->
             <div class="break"></div>
             <div class="navigation">
-                <div class="nav_outline" >
-                <div id="mainNav" class="navigationSimplified">
-                    <?php
-                        menu_bar();
-                    ?>
-                    <!--
-                    <ul class="topnavnew">
-                        <li class="mensfashion">
-                            <a class="topnav" rel="nofollow" href="/category/mens-fashion/">Men's Fashion</a>
-                            <div class="multi_menu">
-                                <div class="menuBack">
-                                    <h3>Men's Fashion Categories &amp; Trending Articles</h3>
-                                    <div class="multiLinks left">
-                                        <a rel="nofollow" href="/category/mens-fashion/?seeall=true">All Latest Fashion Articles</a> 
-                                        <a href="/category/mens-fashion-basics/">Men's Fashion Basics</a> 
-                                        <a href="/category/mens-fashion-trends/">Men's Fashion Trends</a> 
-                                        <a href="/category/mens-fashion-guides/">Men's Fashion Guides</a> 
-                                        <a href="/category/collections/">Men's Fashion Collections</a> 
-                                        <a href="/category/mens-style-icons/">Men's Style Icons</a>
-                                    </div>
-                                    <div class="featuredPicks left">
-                                        <ul>
-                                            <li>
-                                                <a href="http://www.fashionbeans.com/2012/mens-a-essential-tweed-blazer/">
-                                                    <img width="230" alt="Men’s Autumn/Winter Essential: Tweed Blazer" src="http://static3.fashionbeans.com/wp-content/uploads/2012/11/tweedblazermain-300x200.jpg">Men’s Autumn/Winter Essential: Tweed Blazer
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://www.fashionbeans.com/2013/mens-ss13-fashion-trend-neon-fluorescent-colours/">
-                                                    <img width="230" alt="Men’s SS13 Fashion Trend: Neon &amp; Fluorescent Colours" src="http://static4.fashionbeans.com/wp-content/uploads/2013/01/neon-300x200.jpg">Men’s SS13 Fashion Trend: Neon &amp; Fluorescent Colours
-                                                </a>
-                                            </li>
-                                            <li class="nomargin">
-                                                <a href="http://www.fashionbeans.com/2012/5-common-winter-fashion-mistakes/">
-                                                    <img width="230" alt="5 Common Winter Fashion Mistakes" src="http://static1.fashionbeans.com/wp-content/uploads/2012/12/wintermistakes-300x200.jpg">5 Common Winter Fashion Mistakes
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="break"></div>
-                                    
-                                </div>
-                                
-                            </div>
-                        </li>
-                        <li class="mensstyle">
-                            <a href="/category/mens-style/" class="topnav">Men's Style</a>
-                        </li>
-                        <li class="grooming">
-                            <a href="/category/male-grooming/" class="topnav">Men's Grooming Tips &amp; Male Grooming</a>
-                            <div class="multi_menu grooming_menu" style="visibility: hidden;">
-                                <div class="menuBack">
-                                    <h3>Men's Grooming &amp; Hairstyles</h3>
-                                    <div class="multiLinks left"> 
-                                        <a href="/category/male-grooming/">Men's Grooming Tips</a>
-                                        <a href="/category/mens-hairstyles/">Men's Hairstyles Advice</a>
-                                        <a href="/category/mens-hairstyles-gallery/">Men's Hairstyles Galleries</a>
-                                        <a href="/2011/top-10-men%e2%80%99s-grooming-products/">Top 10 Grooming Products</a>
-                                        <a href="/2011/6-of-the-best-mens-hair-products/">Top 6 Men's Hair Products</a>
-                                    </div>
-                                    <div class="hairGalleries left">
-                                        <ul>
-                                            <li>
-                                                <a title="Men's Short Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-short-hairstyles-gallery/"><img alt="Men's Short Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/short.jpg">Short Hair Gallery</a>
-                                            </li>
-                                            <li>
-                                                <a title="Men's Mid-length Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-medium-length-hairstyles-gallery/">
-                                                    <img alt="Men's Mid-length Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/mid.jpg">Mid-length Hair Gallery
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a title="Men's Long Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-long-hairstyles-gallery/">
-                                                    <img alt="Men's Long Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/long.jpg">Long Hair Gallery
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a title="Men's Curly Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-curly-hairstyles-gallery/">
-                                                    <img alt="Men's Curly Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/curly.jpg">Curly Hair Gallery
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a title="Men's Black &amp; Afro Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-black-afro-hairstyles-gallery/">
-                                                    <img alt="Men's Black &amp; Afro Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/black.jpg">Black &amp; Afro Hair Gallery
-                                                </a>
-                                            </li>
-                                            <li class="nomargin">
-                                                <a title="Men's Celebrity Hairstyles Gallery" href="/category/mens-hairstyles-gallery/mens-celebrity-hairstyles-gallery/">
-                                                    <img alt="Men's Celebrity Hairstyles Gallery" src="http://static1.fashionbeans.com/resources/images/new/nav/galleries/celeb.jpg">Celebrity Hair Gallery
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="break"></div>                                    
-                                </div>
-
-                                        </div>
-                                    </li>
-                                    <li class="fitness">
-                                        <a href="/category/mens-fitness-muscle-building/" class="topnav">Men's Fitness</a>
-                                    </li>
-                                    <li class="streetstylenav">
-                                        <a href="/category/mens-street-style/" class="topnav">Street Style Fashion Photography</a>
-                                    </li>
-                                    <li class="navlookbooks">
-                                        <a href="/category/mens-look-books/" class="topnav">Men's Fashion Look Books</a>
-                                    </li>
-                                    <li class="fbtvnav">
-                                        <a href="/category/fbtv/" class="topnav">FBTV</a>
-                                    </li>
-                                    <li class="fashionnews">
-                                        <a href="/category/mens-fashion-news/" class="topnav">Men's Fashion &amp; Style News</a>
-                                    </li>
-                                </ul>
-                    -->
-                                <div class="search-box right">
-                                    <form action="<?php bloginfo('home'); ?>" method="get" id="searchform"> 
-                                        <input type="text" size="10" value="Nhập nội dung" name="s" class="textfield" id="navsearch" value="Nhập nội dung" onfocus="if (this.value == 'Nhập nội dung') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nhập nội dung';}"> 
-                                        <input type="image" border="0" alt="Tìm kiếm" src="<?php bloginfo( 'template_url' ); ?>/images/new/nav/search2.gif" name="searchsubmit" id="navsearchbutton">
-                                    </form>
-                                </div>
-                    <div class="break"></div>
-                </div> <!-- end mainNav -->
+                <div class="nav_outline">
+                    <div id="mainNav" class="navigationSimplified">
+                        <?php
+                            menu_bar();
+                        ?>
+                        <div class="search-box right">
+                            <form action="<?php bloginfo('home'); ?>" method="get" id="searchform"> 
+                                <input type="text" size="10" value="Nhập nội dung" name="s" class="textfield" id="navsearch" value="Nhập nội dung" onfocus="if (this.value == 'Nhập nội dung') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nhập nội dung';}"> 
+                                <input type="image" border="0" alt="Tìm kiếm" src="<?php bloginfo( 'template_url' ); ?>/images/new/nav/search2.gif" name="searchsubmit" id="navsearchbutton">
+                            </form>
+                        </div>
+                        <div class="break"></div>
+                    </div> <!-- end mainNav -->
                 </div>
+            <?php
+                global $post;
+                if(is_single()) {
+                    $cat = get_the_category($post->ID);
+                    $active_class = ($menu_item->object_id == $cat[0]->cat_ID) ? ' class="current"' : '';
+                } else if(is_category() && is_category($menu_item->object_id))
+                    $active_class = ' class="current"';
+                else 
+                    $active_class = '';
+                if(1==1):
+            ?>
+                <div class="secondaryMenu"> <!-- Sub menu -->
+                    <strong>See More:</strong> 
+                        <a href="/category/mens-fashion-basics/">Fashion Basics</a>
+                        <a href="/category/mens-fashion-trends/" class="underline bold">Fashion Trends</a> 
+                        <a href="/category/mens-fashion-guides/">Fashion Guides</a> 
+                        <a href="/category/collections/">Fashion Collections</a>
+                        <a href="/category/mens-fashion/?seeall=true" rel="nofollow">All Articles</a>
+                        <div class="break"></div>
+                </div><!-- end sub menu -->
+            <?php endif; ?>
             </div> <!-- end navigation-->

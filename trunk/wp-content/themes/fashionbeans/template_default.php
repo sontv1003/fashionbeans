@@ -6,12 +6,12 @@
 get_header();
 ?>
 <div class="breadcrumb">
-    
+    <?php if(function_exists('bcn_display')){ bcn_display();}?>
 <?php ;
     $cat_id = 9;
     $post_of_page = 10;
 ?>
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php echo single_cat_title(); ?></h1>
+    <!--<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php echo single_cat_title(); ?></h1>-->
 </div>
 
 <div id="catmainBody" class="left">
@@ -19,8 +19,8 @@ get_header();
         <?php get_slide_show() ?>        
     </div>
     
-    <div class="blacktop"> 
-        <span class="blackheader">Mới nhất:
+    <div class="blacktop">
+        <span class="blackheader">
             <?php echo single_cat_title() ?>
         </span>
     </div>

@@ -85,7 +85,7 @@ if (!class_exists('Custom_Category_Template')){
 				<th scope="row" valign="top"><label for="cat_Image_url"><?php _e('Category Template'); ?></label></th>
 				<td>
 					<select name="cat_template" id="cat_template">
-						<option value='default'><?php _e('Default Template'); ?></option>
+						<option value='template_default.php'><?php _e('Default Template'); ?></option>
 						<?php page_template_dropdown($template); ?>
 					</select>
 					<br />

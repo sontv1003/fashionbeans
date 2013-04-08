@@ -596,6 +596,8 @@ add_filter( 'body_class', 'twentyeleven_body_classes' );
 function menu_bar() {
     $menu_list = '';
     $menu_name = 'primary';
+    global $post;
+    
     if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
         $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
         $menu_items = wp_get_nav_menu_items($menu->term_id);
@@ -604,46 +606,91 @@ function menu_bar() {
             if($menu_item->menu_item_parent!=0) {
                 if(!isset($subArr[$menu_item->menu_item_parent]))
                     $subArr[$menu_item->menu_item_parent] = 0;
-
-                $subArr[$menu_item->menu_item_parent]++;   
+                
+                $subArr[$menu_item->menu_item_parent]++;
             }
         }
 
         $menu_list = '<ul id="menu-' . $menu_name . '" class="topnavnew">';
         $count = 0;
+        $parentMenu = array();
         foreach ( (array) $menu_items as $menu_item ) {
             $title = $menu_item->title;                
             $url = $menu_item->url;
-            $active_class = '';
-            if($menu_item->menu_item_parent!=0) {
-                if($count==0) {
-                    $menu_list .= '<div class="multi_menu"><div class="arrow_menu"></div><div class="menuBack">';
-                    $menu_list .= '<h3>'. category_description($menu_item->menu_item_parent) .'</h3>';
-                    $menu_list .= '<div class="multiLinks left">';
+            
+            if($menu_item->post_parent!=0) {              
+                if(!isset($parentMenu[$menu_item->post_parent])) {
+                    if($count==0) {
+                        $menu_list .= '<div class="multi_menu"><div class="arrow_menu"></div><div class="menuBack">';
+                        $menu_list .= '<h3>'. category_description($menu_item->post_parent) .'</h3>';
+                        $menu_list .= '<div class="multiLinks left">';
+                    }
+                    $menu_list .= '<a href="'. $url .'">'. $title .'</a>';
+                    $count++;
+                    if($count == $subArr[$menu_item->menu_item_parent]) {
+                        $feature_post = get_posts('post_status=publish&numberposts=3&category='.$menu_item->post_parent);
+                        $index = 1;
+                        $menu_list .= <<<MENU
+                        </div>
+                        <div class="featuredPicks left">
+                            <ul>
+MENU;
+                        $index = 1;
+                        foreach($feature_post as $post) : setup_postdata($post);
+                            $link = get_permalink($post->ID);
+                            $title = get_the_title($post->ID);
+                            $last_item = ($index%3==0) ? ' class="nomargin"' : '';
+                            //$image =  wp_get_attachment_url(get_post_thumbnail_id($post->ID)); echo $image;
+                            $image =  wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'default_thumb');// echo $image[0]                             
+                            $menu_list .= <<<MENU_IMG
+                                <li{$last_item}>
+                                    <a href="{$link}"><img src="{$image[0]}" width="230" height="158" />{$title}</a>
+                                </li>
+MENU_IMG;
+                        $index++; endforeach;  
+                        
+                        $menu_list .= <<<END
+                            </ul>
+                        </div>
+                        <div class="break"></div>
+                        </div>
+                        </div>
+                        </li>
+END;
+                        $count = 0;
+                    }
+                    
+                } // End check isset ParentMenu
+            } else {                
+                $active_class = '';
+                if(isCurrentItem($post,$menu_item)) {
+                    $active_class = ' class="current"';
+                    $parentMenu[$menu_item->object_id] = 'true';
                 }
-                
-                $menu_list .= '<a href="'. $url .'">'. $title .'</a>';
-
-                $count++;
-
-                if($count == $subArr[$menu_item->menu_item_parent]) {
-                     $menu_list .= '<div class="featuredPicks left"></div></div><div class="break"></div></div></div></li>';
-                     $count = 0;
-                }
-
-            } else {
-                $menu_list .= '<li id="menu-item-'.$menu_item->object_id.'"><a href="' . $url . '" class="topnav">' . $title . '</a>';
+                $menu_list .= '<li id="menu-item-'.$menu_item->object_id.'"'. $active_class .'><a href="' . $url . '" class="topnav">' . $title . '</a>';
                 if(empty($subArr[$menu_item->ID])) {
                     $menu_list .= '</li>';
                     $count = 0;
                 }
             }
-        }
-
+            
+        } // End foreach Menu
+        
         $menu_list .= '</ul>';
     }
 
     echo $menu_list;
+}
+
+function isCurrentItem($post,$menu_item) {
+    $flag = false;
+    if(is_single()) {
+        $cat = get_the_category($post->ID);
+        $flag = (in_array($menu_item->object_id,array($cat[0]->cat_ID,$cat[0]->category_parent))) ? true : false;        
+    } else if(is_category() && is_category($menu_item->object_id))
+        $flag = true;
+
+    return $flag;
 }
 
 // Get number comment in post

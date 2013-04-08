@@ -11,7 +11,8 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post();?>
 <div class="breadcrumb">
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php the_title() ?></h1>
+    <?php if(function_exists('bcn_display')){ bcn_display();}?>
+    <!--<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php the_title() ?></h1>-->
 </div>
 <div class="articleInfo">
     <div class="commentCount right"> 

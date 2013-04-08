@@ -59,12 +59,5 @@
             </div>
         </div> <!-- end Footer -->
 <?php wp_footer(); ?>
-        
-    <script>
-            console.debug('s=.<?=$cat_id?>');
-            //$cat_id = get_category_top_parent_id();
-        var active_item = 'menu-item-<?php echo $cat_id; ?>';
-        jQuery('#'+active_item).addClass('current');
-    </script>
     </body>
 </html>
