@@ -817,10 +817,10 @@ function get_category_top_parent_id() {
 
 function get_slide_show($numberposts = 5) {        
         if(is_home()) {
-            $category_ids = '1,3,6,7,9';
+            $category_ids = '1,2,3,5,7,9';
         } else {
-            $cats = get_the_category();
-            $category_ids = $cats[0]->cat_ID;            
+            $cats = get_the_category();            
+            $category_ids = (empty($cats[0]->category_parent)) ? $cats[0]->cat_ID : $cats[0]->category_parent;            
         }
             
         $args = array(

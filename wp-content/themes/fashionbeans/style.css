@@ -3917,8 +3917,10 @@ li.nomarginAds {
 .rssFooter {
 	background-image:url(images/new/nav/icons/rssCircle.gif);
 }
-
-#footerEmail {
+input[name="wysija[user][email]"],.wysija-submit {
+    float: left;
+}
+input[name="wysija[user][email]"], #footerEmail {
 	background:#000;
 	color:#AD914A;
 	text-transform:uppercase;
@@ -3931,7 +3933,7 @@ li.nomarginAds {
         font-size: 10px;
 }
 
-#footerSignup {
+.wysija-submit, #footerSignup {
 	background:#FFF;
 	color:#000;
 	height:38px;
@@ -3941,12 +3943,15 @@ li.nomarginAds {
 	border-bottom:2px solid #FFF;
 }
 
-#footerSignup:hover {
+.wysija-submit:hover, #footerSignup:hover {
 	cursor:pointer;
 	background:#AD914A;
 	color:#FFF;
 }
-
+.widget_wysija_cont .wysija-submit {
+    margin-top: 0px !important;
+    width: 90px !important;
+}
 #back {
 	height:100%;
 	width:100%;

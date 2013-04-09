@@ -133,7 +133,7 @@
                 if(1==1):
             ?>
                 <div class="secondaryMenu"> <!-- Sub menu -->
-                    <strong>See More:</strong> 
+                    <strong>Xem thêm:</strong> 
                         <a href="/category/mens-fashion-basics/">Fashion Basics</a>
                         <a href="/category/mens-fashion-trends/" class="underline bold">Fashion Trends</a> 
                         <a href="/category/mens-fashion-guides/">Fashion Guides</a> 
