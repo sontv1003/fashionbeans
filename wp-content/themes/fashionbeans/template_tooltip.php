@@ -3,15 +3,11 @@
  * Template Name: Tooltip xem hình
  */
 
+//NOTE: Phân Trang WP Navi chỉ hoạt động khi config số bản ghi / trang trong admin < posts_per_page
 get_header();
 ?>
 <div class="breadcrumb">
     <?php if(function_exists('bcn_display')){ bcn_display();}?>
-<?php ;
-    $cat_id = 9;
-    $post_of_page = 10;
-?>
-    
 </div>
 
 <div class="streetStyleOutline left">
@@ -27,15 +23,15 @@ get_header();
     
     <ul class="streetStyle">
     <?php 
-        //query_posts(array('posts_per_page'  => $post_of_page,'paged' => $paged));    
+        query_posts(array('post_status' => 'publish','posts_per_page'  => 40,'paged' => $paged,'cat' => get_current_catid()));    
         if ( have_posts() ) :  
         ?>
         <?php $index = 1; while ( have_posts() ) : the_post(); ?>
         <li<?php echo ($index%4==0)? ' class="nomargin"' : ''; ?>>
             <a href="<?php the_permalink() ?>">
                 <input type="hidden" class="title_hide" value="<?php the_title()?>&lt;br/&gt; Bấm để xem chi tiết">
-                <?php the_post_thumbnail('normal_thumb'); ?> 
-                <!--<img src="http://static4.fashionbeans.com/wp-content/uploads/2013/04/anonymous379-254x400.jpg" alt="Anonymous, Photographed in Tokyo&lt;br/&gt; Click Photo To See More" width="150" height="235" aria-describedby="ui-tooltip-4">-->
+                <?php $image =  wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'normal_thumb');  ?>
+                <img src="<?php echo $image[0] ?>" alt="<?php echo get_the_title($post->ID) ?>&lt;br/&gt; Bấm xem chi tiết" width="150" height="235" aria-describedby="ui-tooltip-4">
             </a>
         </li>
         <?php $index++; endwhile; ?>

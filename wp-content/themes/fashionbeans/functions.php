@@ -592,8 +592,11 @@ function twentyeleven_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
 
-
-function menu_bar() {
+/**
+ * Get Main menu 
+ * @global type $post
+ */
+function get_main_menu() {
     $menu_list = '';
     $menu_name = 'primary';
     global $post;
@@ -667,6 +670,7 @@ END;
                     $active_class = ' class="current"';
                     $parentMenu[$menu_item->object_id] = 'true';
                 }
+                
                 $menu_list .= '<li id="menu-item-'.$menu_item->object_id.'"'. $active_class .'><a href="' . $url . '" class="topnav">' . $title . '</a>';
                 if(empty($subArr[$menu_item->ID])) {
                     $menu_list .= '</li>';
@@ -816,8 +820,7 @@ function get_slide_show($numberposts = 5) {
         if(is_home()) {
             $category_ids = '1,2,3,5,7,9';
         } else {
-            $cats = get_the_category();            
-            $category_ids = (empty($cats[0]->category_parent)) ? $cats[0]->cat_ID : $cats[0]->category_parent;            
+            $category_ids = get_current_parent_catid();       
         }
             
         $args = array(
@@ -861,4 +864,72 @@ function get_slide_show($numberposts = 5) {
         </div>
         <div class="jcarousel-prev jcarousel-prev-horizontal" style="top: 135px; display: none;"></div>
         <div class="jcarousel-next jcarousel-next-horizontal" style="top: 135px; display: none;"></div>
-<?php } ?>
+<?php }
+
+/**
+ * Get current category id
+ * @param type $cat_name
+ * @return type
+ */
+function get_current_catid(){
+    $current_cat_name = single_cat_title("", false);
+    $term = get_term_by('name',$current_cat_name, 'category');
+    
+    return $term->term_id;
+}
+
+/**
+ * get Parent current id
+ * @param type $cat_name
+ * @return type
+ */
+function get_current_parent_catid(){
+    $current_cat_name = single_cat_title("", false);
+    $term = get_term_by('name', $current_cat_name, 'category');
+    
+    if(!empty($term->parent))
+        return $term->parent;
+    
+    return $term->term_id;
+}
+
+function get_parent_current_cat_id_by_cat_name($current_cat_name) {
+    $term = get_term_by('name', $current_cat_name, 'category');
+    
+    if(!empty($term->parent))
+        return $term->parent;
+    
+    return $term->term_id;
+}
+
+/**
+ * Get Sub menu for Header menu
+ */
+function get_sub_menu() {
+    global $post;
+    if(is_home()) {
+        return;
+    } elseif(is_single()) {
+        $cat_post = get_the_category($post->ID);
+        $current_cat_id = $cat_post[0]->cat_ID;
+        $current_parent_cat_id = get_parent_current_cat_id_by_cat_name($cat_post[0]->cat_name);
+    } elseif(is_category()) {
+        $current_cat_id = get_current_catid();
+        $current_parent_cat_id = get_current_parent_catid();
+    } else {
+        return;
+    }
+    
+    $childrens = get_categories(array('child_of' => $current_parent_cat_id,'hide_empty' => 0));                
+    if(count($childrens) > 0)
+    {
+        echo '<div class="secondaryMenu"><strong>Xem thêm:</strong>';
+        foreach($childrens as $children) {
+            $active_sub_menu = ($children->cat_ID==$current_cat_id) ? ' class="underline bold"' : '';
+            echo '<a href="'. get_category_link($children->cat_ID) .'"'.$active_sub_menu.'>'. $children->cat_name .'</a>';
+        }
+        echo '<div class="break"></div></div>';
+    }
+}
+
+?>

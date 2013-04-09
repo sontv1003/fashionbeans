@@ -70,12 +70,11 @@ get_header();
 <div class="break"></div> 
 <div class="lookbookCategory">
 <?php   
-    //query_posts(array('posts_per_page'  => $post_of_page,'paged' => $paged));
+    query_posts(array('post_status' => 'publish','posts_per_page'  => 30,'paged' => $paged,'cat' => get_current_catid()));    
     if ( have_posts() ) :  
 ?>
 <?php $count = 1; while ( have_posts() ) : the_post(); ?>
-    <div class="lookbooks" <?php echo ($count%3==0)? 'style="margin-right:0px;"' : ''; ?>>
-        <a class="iframe cboxElement" href="/wp-content/themes/newsite/lookbooks/index.php?id=173080" title="Open Lookbook Fullscreen" rel="nofollow">Open Lookbook Fullscreen</a> 
+    <div class="lookbooks" <?php echo ($count%3==0)? 'style="margin-right:0px;"' : ''; ?>> 
         <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title() ?>">
             <p style="width: 320px; height: 213px;">
                 <?php the_post_thumbnail('large_thumb'); ?>
@@ -91,8 +90,8 @@ get_header();
     <div class="break"></div>
 </div>
 <div class="break"></div>
+<?php $paged = (!empty($paged)) ? $paged : 1; ?>
+<p class="pageCount"><?php echo ($paged-1) * $wp_query->post_count + 1; ?> - <?php echo $paged * $wp_query->post_count; ?> CỦA <?php echo $wp_query->found_posts?> <?php echo single_cat_title(); ?></p>
+<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
 
-<?php
-get_footer(); 
-
-?>
+<?php get_footer(); ?>

@@ -7,11 +7,6 @@ get_header();
 ?>
 <div class="breadcrumb">
     <?php if(function_exists('bcn_display')){ bcn_display();}?>
-<?php ;
-    $cat_id = 9;
-    $post_of_page = 10;
-?>
-    <!--<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> //&nbsp;<h1><?php echo single_cat_title(); ?></h1>-->
 </div>
 
 <div id="catmainBody" class="left">
@@ -25,7 +20,7 @@ get_header();
         </span>
     </div>
     <?php 
-    //query_posts(array('posts_per_page'  => $post_of_page,'paged' => $paged));    
+    query_posts(array('post_status' => 'publish','posts_per_page'  => 10,'paged' => $paged,'cat' => get_current_catid()));    
     if ( have_posts() ) :  
     ?>
     <?php while ( have_posts() ) : the_post(); ?>
