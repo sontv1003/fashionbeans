@@ -75,15 +75,13 @@
                 <div class="sitelinks left">
                     
                 </div>
-                <!--
                 <ul class="sitelinks left">
-                    <li><a class="activeSite" href="/" name="top">FashionBeans</a></li>
-                    <li><a href="/forums/" oldtitle="Discuss everything to do with men's fashion, style &amp; grooming." title="" aria-describedby="ui-tooltip-0">Forums</a></li>
-                    <li><a href="/menswear/" oldtitle="Shop the latest designer menswear from all your favourite retailers." title="" aria-describedby="ui-tooltip-1">Menswear</a></li>
-                    <li><a href="/category/offers-and-vouchers/" oldtitle="The Latest fashion discount codes, money off vouchers &amp; offers." title="">Voucher Codes</a></li>
-                    <li><a rel="nofollow" href="/category/site-announcements/competitions/" oldtitle="Win Great Prizes From Your Favourite Fashion Brands!" title="" aria-describedby="ui-tooltip-3">Competitions</a></li>
+                    <li><a class="activeSite" href="http://welook.vn" name="top">WE LOOK</a></li>
+                    <li><a href="http://wesale.vn" oldtitle="WE SALE" title="" aria-describedby="ui-tooltip-0">WE SALE</a></li>
+                    <li><a href="http://weorder.vn" oldtitle="WE ORDER" title="" aria-describedby="ui-tooltip-1">WE ORDER</a></li>
+                    <li><a href="http://wedrink.vn" oldtitle="WE DRINK" title="">WE DRINK</a></li>
+                    <li><a rel="nofollow" href="http://wephoto.vn" oldtitle="WE PHOTO" title="" aria-describedby="ui-tooltip-3"> WE PHOTO</a></li>
                 </ul>
-                -->
                 
 <!--                <ul class="right socialIcons">
                     <li style="width:83px;" class="facebookLike">
