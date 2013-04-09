@@ -132,7 +132,8 @@
                     $active_class = '';
                 if(1==1):
             ?>
-                <div class="secondaryMenu"> <!-- Sub menu -->
+                <!--
+                <div class="secondaryMenu">
                     <strong>Xem thêm:</strong> 
                         <a href="/category/mens-fashion-basics/">Fashion Basics</a>
                         <a href="/category/mens-fashion-trends/" class="underline bold">Fashion Trends</a> 
@@ -140,6 +141,7 @@
                         <a href="/category/collections/">Fashion Collections</a>
                         <a href="/category/mens-fashion/?seeall=true" rel="nofollow">All Articles</a>
                         <div class="break"></div>
-                </div><!-- end sub menu -->
+                </div>
+                -->
             <?php endif; ?>
             </div> <!-- end navigation-->
