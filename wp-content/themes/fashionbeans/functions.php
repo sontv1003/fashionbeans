@@ -829,14 +829,13 @@ function get_slide_show($numberposts = 5) {
             'category'        => $category_ids,
             'orderby'         => 'post_date',
             'order'           => 'DESC',
-            'include'         => '',
-            'exclude'         => '',
             'post_type'       => 'post',
-            'post_status'     => 'publish' 
+            'post_status'     => 'publish',
+            'hide_empty'      => 0
         );
         
         $recent_posts = get_posts( $args );
-        $count = count($recent_posts);        
+        $count = count($recent_posts);
 ?>
         <div class="scrollerControls">
             <?php foreach(range(1,$count) as $index): ?>
@@ -847,7 +846,7 @@ function get_slide_show($numberposts = 5) {
             <ul class="jcarousel-list jcarousel-list-horizontal" style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: -1350px; width: 3375px;">
                 <?php $i=1; foreach($recent_posts as $post): setup_postdata($post); ?>
                 <li class="jcarousel-item jcarousel-item-horizontal jcarousel-item-<?php echo $i;?> jcarousel-item-<?php echo $i;?>-horizontal" style="float: left; list-style: none; width: 675px;" jcarouselindex="<?php echo $i;?>"> 
-                    <a href="<?php the_permalink() ?>">
+                    <a href="<?php echo get_permalink($post->ID) ?>">
                          <?php echo get_the_post_thumbnail($post->ID,'slide_show'); ?> 
                         <div class="featuredInfo" style="display: none;"> 
                             <span>
@@ -855,7 +854,7 @@ function get_slide_show($numberposts = 5) {
                                     echo $category[0]->cat_name;
                                 ?>
                             </span>
-                            <h2><?php the_title(); ?></h2>
+                            <h2><?php echo get_the_title($post->ID); ?></h2>
                         </div> 
                     </a>
                 </li>
