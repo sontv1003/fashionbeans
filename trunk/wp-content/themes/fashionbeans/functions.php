@@ -502,7 +502,7 @@ function twentyeleven_comment( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'twentyeleven' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'twentyeleven' ); ?><?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?></p>
 	<?php
 			break;
 		default :
@@ -759,7 +759,6 @@ function getCurrentCatID(){
 
 }
 ?>
-                
 <?php //this function will be called in the next section
 function advanced_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
@@ -785,8 +784,6 @@ function advanced_comment($comment, $args, $depth) {
     <div class="break"></div>
    </div>
 <?php } ?>
-
-    
 <?php
     /**
 * Returns ID of top-level parent category, or current category if you are viewing a top-level
@@ -865,19 +862,3 @@ function get_slide_show($numberposts = 5) {
         <div class="jcarousel-prev jcarousel-prev-horizontal" style="top: 135px; display: none;"></div>
         <div class="jcarousel-next jcarousel-next-horizontal" style="top: 135px; display: none;"></div>
 <?php } ?>
-
- <?php
-// 
-//function template_change( $template ){
-//    if( is_single() && in_category('cat1') ){
-//        $templates = array("single-cat1.php");
-//    } elseif( is_single() && in_category('cat2') ){
-//        $templates = array("single-cat2.php");
-//    } elseif( is_single() && in_category('cat3') ){
-//        $templates = array("single-cat3.php");
-//    }
-//    $template = locate_template( $templates );
-//    return $template;
-//}
-//add_filter( 'single_template', 'template_change' ); //'template_include'/'single_template'
-?>
