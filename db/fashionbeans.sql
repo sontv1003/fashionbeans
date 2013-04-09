@@ -3,7 +3,7 @@
 -- Server version:               5.5.24-log - MySQL Community Server (GPL)
 -- Server OS:                    Win64
 -- HeidiSQL version:             7.0.0.4053
--- Date/time:                    2013-04-09 09:24:00
+-- Date/time:                    2013-04-09 10:23:58
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -219,7 +219,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   UNIQUE KEY `option_name` (`option_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1036 DEFAULT CHARSET=utf8;
 
--- Dumping data for table fashionbeans.wp_options: ~729 rows (approximately)
+-- Dumping data for table fashionbeans.wp_options: ~265 rows (approximately)
 /*!40000 ALTER TABLE `wp_options` DISABLE KEYS */;
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 	(1, 'siteurl', 'http://localhost/fashionbeans', 'yes'),
@@ -535,7 +535,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   KEY `meta_key` (`meta_key`)
 ) ENGINE=InnoDB AUTO_INCREMENT=696 DEFAULT CHARSET=utf8;
 
--- Dumping data for table fashionbeans.wp_postmeta: ~402 rows (approximately)
+-- Dumping data for table fashionbeans.wp_postmeta: ~464 rows (approximately)
 /*!40000 ALTER TABLE `wp_postmeta` DISABLE KEYS */;
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 	(1, 2, '_wp_page_template', 'default'),
@@ -1037,7 +1037,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `post_author` (`post_author`)
 ) ENGINE=InnoDB AUTO_INCREMENT=216 DEFAULT CHARSET=utf8;
 
--- Dumping data for table fashionbeans.wp_posts: ~126 rows (approximately)
+-- Dumping data for table fashionbeans.wp_posts: ~195 rows (approximately)
 /*!40000 ALTER TABLE `wp_posts` DISABLE KEYS */;
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 	(1, 1, '2013-03-20 11:11:20', '2013-03-20 11:11:20', '<p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!</p>\r\n', 'Hello world!', '', 'trash', 'open', 'open', '', 'hello-world', '', '', '2013-03-30 21:54:39', '2013-03-30 14:54:39', '', 0, 'http://localhost/fashionbeans/?p=1', 0, 'post', '', 1),
