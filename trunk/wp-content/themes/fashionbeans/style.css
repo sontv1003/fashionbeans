@@ -428,13 +428,7 @@ span.blackHeaderBox {
 }
 
 .navigationSimplified {
-    border-color: #fff;
-    border-style: solid;
-    border-width: 1px 0px 1px 0px;
-/*    outline-color: #000;
-    outline-style: solid;
-    outline-width: 1px;*/
-    background: #000;
+    background: url(images/new/nav/menu_bg.png) repeat-x;
     color: #fff;
     z-index:100;
 }
@@ -508,8 +502,11 @@ li.fashionnews .topnav {
     text-decoration: underline;
 }
 
+.topnavnew li.current {
+     background:url(images/new/nav/menu_active.png) repeat-x;
+}
 .topnavnew li.current a {
-    background: #EEEEEE;
+    /*background: #EEEEEE;*/
     color: #000;
     text-decoration: underline;
 }
@@ -529,7 +526,7 @@ li.fashionnews .topnav {
 .multi_menu {	
     visibility:hidden;    
     position:absolute;
-    top:50px;
+    top:46px;
     left:0px;
     width:1000px;
     z-index:100;

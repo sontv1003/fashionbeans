@@ -21,7 +21,7 @@
                             <a title="Welook Tumblr" target="_blank" href="http://#" class="tumblrFooter">Welook Tumblr</a>
                         </li>
                         <li>
-                            <a title="Welook RSS Feed" rel="nofollow" target="_blank" href="http://#" class="rssFooter">Welook RSS Feed</a>
+                            <a title="Welook RSS Feed" rel="nofollow" target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>feed" class="rssFooter">Welook RSS Feed</a>
                         </li>
                     </ul>
                     <div class="break"></div> 
@@ -56,6 +56,8 @@
                         touchwipe(".featuredScroller");
                         touchwipe("#mostPopular");
                         touchwipe("#fbtv-homepage");
+                        var cat_id = '<?php echo get_current_parent_catid();?>';
+                        $('#menu-item-'+cat_id).addClass('current');
                         //validateForms("#commentform");
                     });
                 </script>                                

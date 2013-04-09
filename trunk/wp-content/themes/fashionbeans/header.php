@@ -105,41 +105,19 @@
             </div><!-- end center -->
             <div class="break"></div>
             <div class="navigation">
-                <div class="nav_outline">
-                    <div id="mainNav" class="navigationSimplified">
-                        <?php
-                            menu_bar();
-                        ?>
-                        <div class="search-box right">
-                            <form action="<?php bloginfo('home'); ?>" method="get" id="searchform"> 
-                                <input type="text" size="10" value="Nhập nội dung" name="s" class="textfield" id="navsearch" value="Nhập nội dung" onfocus="if (this.value == 'Nhập nội dung') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nhập nội dung';}"> 
-                                <input type="image" border="0" alt="Tìm kiếm" src="<?php bloginfo( 'template_url' ); ?>/images/new/nav/search2.gif" name="searchsubmit" id="navsearchbutton">
-                            </form>
-                        </div>
-                        <div class="break"></div>
-                    </div> <!-- end mainNav -->
-                </div>
-            <?php
-                global $post;
-                if(is_single()) {
-                    $cat = get_the_category($post->ID);
-                    $active_class = ($menu_item->object_id == $cat[0]->cat_ID) ? ' class="current"' : '';
-                } else if(is_category() && is_category($menu_item->object_id))
-                    $active_class = ' class="current"';
-                else 
-                    $active_class = '';
-                if(1==1):
-            ?>
-                <!--
-                <div class="secondaryMenu">
-                    <strong>Xem thêm:</strong> 
-                        <a href="/category/mens-fashion-basics/">Fashion Basics</a>
-                        <a href="/category/mens-fashion-trends/" class="underline bold">Fashion Trends</a> 
-                        <a href="/category/mens-fashion-guides/">Fashion Guides</a> 
-                        <a href="/category/collections/">Fashion Collections</a>
-                        <a href="/category/mens-fashion/?seeall=true" rel="nofollow">All Articles</a>
-                        <div class="break"></div>
-                </div>
-                -->
-            <?php endif; ?>
+                
+                <div id="mainNav" class="navigationSimplified">
+                    <?php get_main_menu(); ?>
+                    <div class="search-box right">
+                        <form action="<?php bloginfo('home'); ?>" method="get" id="searchform"> 
+                            <input type="text" size="10" value="Nhập nội dung" name="s" class="textfield" id="navsearch" value="Nhập nội dung" onfocus="if (this.value == 'Nhập nội dung') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Nhập nội dung';}"> 
+                            <input type="image" border="0" alt="Tìm kiếm" src="<?php bloginfo( 'template_url' ); ?>/images/new/nav/search2.gif" name="searchsubmit" id="navsearchbutton">
+                        </form>
+                    </div>
+                    <div class="break"></div>
+                </div> <!-- end mainNav -->
+
+                <!-- Sub Menu -->
+                <?php get_sub_menu() ?>
+                <!-- End Sub Menu -->
             </div> <!-- end navigation-->
