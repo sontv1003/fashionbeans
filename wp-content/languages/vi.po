@@ -7028,3 +7028,6 @@ msgstr "Đăng xuất"
 #: wp-includes/class-wp-xmlrpc-server.php:4534
 msgid "You do not have permission to upload files."
 msgstr "Bạn không có quyền tải tập tin lên."
+
+msgid "Main Sidebar"
+msgstr "Sidebar bên phải"

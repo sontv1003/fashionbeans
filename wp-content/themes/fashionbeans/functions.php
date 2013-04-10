@@ -391,7 +391,7 @@ function twentyeleven_widgets_init() {
 	register_widget( 'Twenty_Eleven_Ephemera_Widget' );
 
 	register_sidebar( array(
-		'name' => __( 'Main Sidebar', 'twentyeleven' ),
+		'name' => __( 'Sidebar bên phải', 'twentyeleven' ),
 		'id' => 'sidebar-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -400,17 +400,17 @@ function twentyeleven_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Showcase Sidebar', 'twentyeleven' ),
+		'name' => __( 'Sidebar góc trên', 'twentyeleven' ),
 		'id' => 'sidebar-2',
 		'description' => __( 'The sidebar for the optional Showcase Template', 'twentyeleven' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_widget' => '<div class="rightArea">',
+		'after_widget' => "</div>",
+		'before_title' => '<span>',
+		'after_title' => '</span>',
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Footer Area', 'twentyeleven' ),
+		'name' => __( 'Sidebar phía dưới', 'twentyeleven' ),
 		'id' => 'sidebar-3',
 		'description' => __( 'An optional widget area for your site footer', 'twentyeleven' ),
 		'before_widget' => '<div class="left linksBlock"> ',
