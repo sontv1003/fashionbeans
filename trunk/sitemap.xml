@@ -1,288 +1,322 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://localhost/fashionbeans/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.5.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="10/04/2013 15:21" -->
-<!-- Debug: Total comment count: 8 -->
+<!-- generated-on="10/04/2013 17:00" -->
+<!-- Debug: Total comment count: 2 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://localhost/fashionbeans/</loc>
-		<lastmod>2013-04-07T15:06:45+00:00</lastmod>
+		<lastmod>2013-04-10T16:59:18+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
-<!-- Debug: Priority report of postID 211: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 235: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://localhost/fashionbeans/xu-huong/bo-suu-tap-vay-cuoi-co-dien/</loc>
+		<lastmod>2013-04-10T16:59:18+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 234: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://localhost/fashionbeans/xu-huong/khang-dinh-phong-cach-voi-so-mi-oversize/</loc>
+		<lastmod>2013-04-10T16:58:25+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 229: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://localhost/fashionbeans/xu-huong/don-tuan-moi-cung-cong-so-hien-dai/</loc>
+		<lastmod>2013-04-10T16:57:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 223: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://localhost/fashionbeans/xu-huong/chon-chan-vay-bay-bong-va-lang-man-cho-nang/</loc>
+		<lastmod>2013-04-10T16:55:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://localhost/fashionbeans/ve-chung-toi/</loc>
+		<lastmod>2013-04-10T16:45:52+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 211: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/sac-vang-noi-bat-ngay-nang/</loc>
 		<lastmod>2013-04-07T15:06:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 209: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 209: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/legging-lien-vay-2-trong-1-cho-teengirl/</loc>
 		<lastmod>2013-04-07T15:04:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 207: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 207: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/trang-phuc-in-hoa-am-ap-cho-ngay-lanh/</loc>
 		<lastmod>2013-04-07T15:03:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 205: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 205: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/uncategorized/ao-khoac-cape-len-ngoi/</loc>
 		<lastmod>2013-04-07T15:02:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 203: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 203: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/ao-khoac-dai-cho-mua-dong/</loc>
 		<lastmod>2013-04-07T15:01:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 195: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 195: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/phong-cach-tomboy-cho-mua-dong-nang-dong/</loc>
 		<lastmod>2013-04-07T15:01:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 192: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 192: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/phoi-do-dep-di-noel/</loc>
 		<lastmod>2013-04-07T14:55:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 190: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 190: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/ao-khoac-khuy-moc-ca-tinh-cho-teen-girl/</loc>
 		<lastmod>2013-04-07T14:54:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 187: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 187: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/legging-cho-nang-them-xinh/</loc>
 		<lastmod>2013-04-07T14:53:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 184: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 184: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/mix-do-cung-ao-len/</loc>
 		<lastmod>2013-04-07T14:52:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 179: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 179: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/phong-cach/quy-co-cong-so-quyen-ru-cung-vay-lien/</loc>
 		<lastmod>2013-04-07T14:51:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 176: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 176: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/tin-tuc/dien-vay-hoa-cho-ngay-xuan-khoi-sac/</loc>
 		<lastmod>2013-04-07T13:48:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 174: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 174: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/sao-dien-do-da-khoe-voc-dang/</loc>
 		<lastmod>2013-04-07T13:46:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 172: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 172: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/my-nhan-viet-dien-style-co-dien-nhung-van-long-lay/</loc>
 		<lastmod>2013-04-07T13:45:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 170: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 170: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/hoa-hau-thu-thao-kin-bung-nhung-van-hut-mat/</loc>
 		<lastmod>2013-04-07T13:44:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 162: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 162: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/ha-ho-lai-lang-xe-mot-tat-rach-quan-sieu-ngan/</loc>
 		<lastmod>2013-04-07T13:37:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 155: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 155: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/xu-huong/nhan-dinh-hon-va-nhan-cuoi-ton-sur-ton/</loc>
 		<lastmod>2013-04-07T13:24:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 153: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 153: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/xu-huong/ao-khoac-long-cho-dam-cuoi-mua-dong/</loc>
 		<lastmod>2013-04-07T13:14:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 148: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 148: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/xu-huong/xanh-ngoc-bich-len-ngoi-2013/</loc>
 		<lastmod>2013-04-07T13:14:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 145: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 145: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/xu-huong/thoi-trang-det-kim-stefanel/</loc>
 		<lastmod>2013-04-07T13:12:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 142: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 142: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/xu-huong/don-nam-moi-2013-voi-mau-huyet-du/</loc>
 		<lastmod>2013-04-07T13:11:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 140: Comments: 1 of 8 = 0.1 points -->
+<!-- Debug: Priority report of postID 140: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/thoi-trang/thoi-trang-nam/ao-vest-tre-trung-cho-chang-2013/</loc>
 		<lastmod>2013-04-07T13:08:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 137: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 137: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/thoi-trang/thoi-trang-nu/am-ap-ma-van-cong-veo-cho-ngay-lanh/</loc>
 		<lastmod>2013-04-07T13:07:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 132: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 132: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/thoi-trang/thoi-trang-cong-so/noi-bat-voi-so-mi-cong-so-mua-dong/</loc>
 		<lastmod>2013-04-07T13:05:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 130: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 130: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/thoi-trang/thoi-trang-nu/dien-trang-phuc-phat-sang/</loc>
 		<lastmod>2013-04-07T13:01:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 127: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 127: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/thoi-trang/thoi-trang-da-hoi/bst-xuan-he-2013-cua-jenny-packham/</loc>
 		<lastmod>2013-04-07T12:58:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 112: Comments: 2 of 8 = 0.3 points -->
+<!-- Debug: Priority report of postID 112: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/lam-dep/cham-soc-da/muon-kieu-vay-lien-than-say-long-phai-dep/</loc>
 		<lastmod>2013-04-07T11:57:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>0.3</priority>
+		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 115: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 115: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/lam-dep/chon-do-dep-xinh-nhu-co-gai-phia-nam/</loc>
 		<lastmod>2013-04-04T17:06:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 109: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 109: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/lam-dep/6-cach-lam-toc-ong-muot-nhu-suoi/</loc>
 		<lastmod>2013-04-04T16:32:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 96: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 96: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/jack-spade-springsummer-2013-mens-lookbook/</loc>
 		<lastmod>2013-03-30T15:35:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 94: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 94: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/wood-wood-springsummer-2013-mens-lookbook/</loc>
 		<lastmod>2013-03-30T15:35:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 92: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 92: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/libertine-libertine-spring-2013-part-2-mens-lookbook/</loc>
 		<lastmod>2013-03-30T15:34:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 90: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 90: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/alan-paine-autumnwinter-2013-mens-lookbook/</loc>
 		<lastmod>2013-03-30T15:34:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 88: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 88: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/the-duffer-of-st-george-spring-2013-mens-lookbook/</loc>
 		<lastmod>2013-03-30T15:34:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 76: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 76: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/handsom-autumnwinter-2013-mens-lookbook/</loc>
 		<lastmod>2013-03-30T15:28:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 68: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 68: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/chuyen-sao/beams-springsummer-2013-mens-lookbook/</loc>
 		<lastmod>2013-03-29T16:52:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 63: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 63: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/tin-tuc/moss-bros-ss13-clothing-collection/</loc>
 		<lastmod>2013-03-25T16:07:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 30: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 30: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/tin-tuc/burberry-menswear-to-showcase-at-london-collections-men/</loc>
 		<lastmod>2013-03-25T16:03:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 53: Comments: 0 of 8 = 0 points -->
+<!-- Debug: Priority report of postID 53: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/tin-tuc/53/</loc>
 		<lastmod>2013-03-25T16:02:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 10: Comments: 1 of 8 = 0.1 points -->
+<!-- Debug: Priority report of postID 10: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/lam-dep/engineered-garments-clothing-ss13-collection/</loc>
 		<lastmod>2013-03-24T15:45:17+00:00</lastmod>
@@ -295,22 +329,16 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
-<!-- Debug: Priority report of postID 27: Comments: 4 of 8 = 0.5 points -->
+<!-- Debug: Priority report of postID 27: Comments: 2 of 2 = 1 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/tin-tuc/louis-vuitton-menswear-ss13-collection/</loc>
 		<lastmod>2013-03-22T13:53:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
+		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://localhost/fashionbeans/terms-conditions/</loc>
 		<lastmod>2013-03-20T15:31:22+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://localhost/fashionbeans/sample-page/</loc>
-		<lastmod>2013-03-20T11:11:20+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.6</priority>
 	</url>
