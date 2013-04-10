@@ -12,7 +12,10 @@ get_header(); ?>
 <h1 class="searchCategory"><?php printf( __( 'Kết quả tìm kiếm: %s', 'twentyeleven' ), '<span class="searchterms">' . get_search_query() . '</span>' ); ?></h1>
                 <div id="results">
                     <div class="gsc-above-wrapper-area"></div>
-			<?php if ( have_posts() ) : ?>
+			<?php 
+                        $s = (!empty($_GET['s'])) ? $_GET['s'] : '';
+                        query_posts(array('s' => $s,'posts_per_page'  => 10,'paged' => $paged));
+                        if ( have_posts() ) : ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
                                     <div class="gsc-webResult gsc-result">

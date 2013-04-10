@@ -9,19 +9,19 @@
                     <span>Kết nối cùng WELOOK</span>
                     <ul>
                         <li style="margin-left:0;">
-                            <a title="Welook Facebook Page" target="_blank" href="http://#" class="fbFooter">Welook Official Facebook Page</a>
+                            <a title="Welook Facebook Page" href="<?php echo esc_url( home_url( '/' ) ); ?>#" class="fbFooter">Welook Official Facebook Page</a>
                         </li>
                         <li>
-                            <a title="Welook Twitter" target="_blank" href="http://#" class="twitterFooter">Welook Official Twitter</a>
+                            <a title="Welook Twitter" href="<?php echo esc_url( home_url( '/' ) ); ?>#" class="twitterFooter">Welook Official Twitter</a>
                         </li>
                         <li>
-                            <a title="Welook Google +1 Page" target="_blank" href="http://#" class="googleFooter">Welook Google +1 Page</a>
+                            <a title="Welook Google +1 Page" href="<?php echo esc_url( home_url( '/' ) ); ?>#" class="googleFooter">Welook Google +1 Page</a>
                         </li>
                         <li>
-                            <a title="Welook Tumblr" target="_blank" href="http://#" class="tumblrFooter">Welook Tumblr</a>
+                            <a title="Welook Tumblr" href="<?php echo esc_url( home_url( '/' ) ); ?>#" class="tumblrFooter">Welook Tumblr</a>
                         </li>
                         <li>
-                            <a title="Welook RSS Feed" rel="nofollow" target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>feed" class="rssFooter">Welook RSS Feed</a>
+                            <a title="Welook RSS Feed" rel="nofollow" href="<?php echo esc_url( home_url( '/' ) ); ?>feed" class="rssFooter">Welook RSS Feed</a>
                         </li>
                     </ul>
                     <div class="break"></div> 

@@ -19,7 +19,8 @@ get_header();
 </div>
 
 <div class="cpmAdapt right">
-    
+    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+    <?php include 'widget_social.php'; ?>
 </div>
 <div class="break"></div>
 <div class="blacktop"> 
