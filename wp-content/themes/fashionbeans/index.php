@@ -113,7 +113,7 @@
  foreach($home_fashions as $post) : setup_postdata($post);
  ?>
         <div class="home-twoColumn <?php echo ($index%2==0)? 'farRight ':''; ?>left">
-            <a href="<?php the_title() ?>">
+            <a href="<?php the_permalink() ?>">
                 <?php the_post_thumbnail('large_thumb'); ?>                
             </a> 
             <a class="the-category" href="<?php $category = get_the_category($post->ID); echo get_category_link($category[0]->term_id);?>"><?php echo $category[0]->cat_name;?></a>
@@ -148,7 +148,7 @@
  foreach($home_makeup as $post) : setup_postdata($post);
  ?>
         <div class="home-twoColumn <?php echo ($index%2==0)? 'farRight ':''; ?>left">
-            <a href="<?php the_title() ?>">
+            <a href="<?php the_permalink() ?>">
                 <?php the_post_thumbnail('large_thumb'); ?>                
             </a> 
             <a class="the-category" href="<?php $category = get_the_category($post->ID); echo get_category_link($category[0]->term_id);?>"><?php echo $category[0]->cat_name;?></a>
