@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://localhost/fashionbeans/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.5.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="10/04/2013 17:00" -->
+<!-- generated-on="10/04/2013 17:05" -->
 <!-- Debug: Total comment count: 2 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://localhost/fashionbeans/</loc>
-		<lastmod>2013-04-10T16:59:18+00:00</lastmod>
+		<lastmod>2013-04-10T17:04:58+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
+	<url>
+		<loc>http://localhost/fashionbeans/dieu-khoan-quy-dinh/</loc>
+		<lastmod>2013-04-10T17:04:58+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
 <!-- Debug: Priority report of postID 235: Comments: 0 of 2 = 0 points -->
 	<url>
 		<loc>http://localhost/fashionbeans/xu-huong/bo-suu-tap-vay-cuoi-co-dien/</loc>
@@ -335,12 +341,6 @@
 		<lastmod>2013-03-22T13:53:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://localhost/fashionbeans/terms-conditions/</loc>
-		<lastmod>2013-03-20T15:31:22+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.6</priority>
 	</url>
 <!-- Debug: End Postings -->
 <!-- Debug: Start Custom Pages -->
