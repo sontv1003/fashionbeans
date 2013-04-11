@@ -8,13 +8,13 @@
  */
 
 get_header(); ?>
-<div class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> // Tìm kiếm // <?php printf( __( 'Kết quả tìm kiếm: %s', 'twentyeleven' ), get_search_query() ); ?></div>
+<div class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a> > Tìm kiếm > <?php printf( __( 'Kết quả tìm kiếm: %s', 'twentyeleven' ), get_search_query() ); ?></div>
 <h1 class="searchCategory"><?php printf( __( 'Kết quả tìm kiếm: %s', 'twentyeleven' ), '<span class="searchterms">' . get_search_query() . '</span>' ); ?></h1>
                 <div id="results">
                     <div class="gsc-above-wrapper-area"></div>
 			<?php 
                         $s = (!empty($_GET['s'])) ? $_GET['s'] : '';
-                        query_posts(array('s' => $s,'posts_per_page'  => 10,'paged' => $paged));
+                        query_posts(array('s' => $s, 'post_status' => 'publish','posts_per_page'  => 10,'paged' => $paged));
                         if ( have_posts() ) : ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
