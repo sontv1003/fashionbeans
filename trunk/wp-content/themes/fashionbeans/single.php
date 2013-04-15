@@ -19,11 +19,16 @@ get_header(); ?>
         <a href="#comments"><span><?php echo get_number_comments() ?></span>Comments</a>
     </div>
     <h1 class="articles"><?php the_title(); ?></h1>
-    <div class="meta">
-        <span class="author">Người đăng: 
+    <div class="meta" style="position: relative;">
+        <span class="author">
+            Người đăng: 
             <a href="<?php the_author_link() ?>" title="<?php the_author_nickname()?>" rel="author"><?php the_author_nickname()?></a> 
-            on 21st March 2013 </span>
+        </span>
         <div class="break"></div>
+        <div class="single_date">
+            <span class="day"><?php the_time('d'); ?></span>
+            <span class="month"><?php the_time('m'); ?></span>
+        </div>
     </div>
 </div>
 <div id="singleOutline" class="left">
@@ -31,12 +36,11 @@ get_header(); ?>
         <?php the_post_thumbnail() ?>
     </div>
     
-    <div class="articleSocial" style="border-top:none;border-bottom:double #111;margin:0 0 25px 0;padding-top:0;">
+    <div class="articleSocial" style="border-top:none;border-bottom:double #111;margin:0 0 25px 0;padding-top:0; position: relative;">
        <span class="left">CHIA SẺ:</span>
        <div class="left"><?php echo get_jamie_social_code(); ?></div>
        <div class="break"></div>
     </div>
-    
     <div class="articleBody"><?php the_content() ?></div>
     
     <div class="articleSocial">

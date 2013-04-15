@@ -4284,3 +4284,26 @@ li.nomarginAds {
 .rightArea {
     height: 250px;
 }
+
+.single_date {
+    position: absolute; 
+    top: -40px;
+    left: -60px; 
+    width: 50px; 
+    height: 65px;
+    text-align: center; 
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+}
+.single_date .day {
+    font-size: 34px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.single_date .month {
+    display: block;
+    margin-top: 1px;
+    font-size: 18px;
+}
