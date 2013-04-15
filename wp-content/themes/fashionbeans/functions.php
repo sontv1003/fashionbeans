@@ -818,7 +818,7 @@ function get_category_top_parent_id() {
 
 function get_slide_show($numberposts = 5) {        
         if(is_home()) {
-            $category_ids = '1,2,3,5,7,9';
+            $category_ids = '-1,2,3,5,7,9';
         } else {
             $category_ids = get_current_parent_catid();       
         }
